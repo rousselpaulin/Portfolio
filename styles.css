@@ -15,6 +15,7 @@ body {
 
 /* Style de la barre de navigation */
 nav {
+    padding: 10px 20px;
     height: 40px;
     display: flex;
     justify-content: flex-end;
@@ -45,6 +46,48 @@ a:hover {
     text-decoration-color: #D32F2F;
     text-decoration-thickness: 20%;
 }
+
+/* Cacher les éléments du menu pour mobile */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #F6ECE9;
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #40434E;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu a {
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar.show .menu {
+        display: flex;
+    }
+}
+
 
 /* Section d'introduction */
 section#home {

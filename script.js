@@ -14,3 +14,19 @@ window.addEventListener("scroll", function() {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Empêche les valeurs négatives
 });
+
+// Fonction pour ouvrir/fermer le menu sur mobile
+document.getElementById('burger').addEventListener('click', function() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('show');
+});
+
+// Fermer le menu quand un élément est cliqué
+const menuLinks = document.querySelectorAll('.menu a');
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.remove('show'); // Ferme le menu
+    });
+});
