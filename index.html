@@ -16,9 +16,11 @@
         <div class="menu">
             <a href="#home">Accueil</a>
             <a href="#formation">Formation</a>
-            <a href="#experience">Expérience</a>
+            <a href="#experience">Expériences</a>
             <a href="#projets">Projets</a>
             <a href="#competences">Compétences</a>
+            <a href="#cv">Mon CV</a>
+            <a href="#loisirs">Loisirs</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="burger" id="burger">
@@ -36,7 +38,7 @@
     <!-- Section À propos -->
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Je suis un développeur passionné par la création de sites web et d'applications. Voici quelques-uns de mes projets récents.</p>
+        <p>Je m’appelle Paulin Roussel et je suis étudiant en première année de BUT Réseaux et Télécommunications sur le site d’Aubière à Clermont-Ferrand. Passionné par le domaine de la cybersécurité, je me prépare activement à intégrer ce secteur grâce à mes études, mes expériences professionnelles et mes projets concrets.</p>
     </section>
 
     <!-- Section Formation -->
@@ -47,8 +49,19 @@
 
     <!-- Section Experience -->
     <section id="experience">
-        <h2>Experience professionnelle</h2>
-        <p>Exemples de job d'été.</p>
+        <h2>Experiences professionnelles</h2>
+        <div class="projets">
+            <div class="card">
+                <h3>Technicien/Monteur – Verdot Ips2</h3>
+                <img src="verdot-logo.jpg" alt="Verdot Ips2" id="card-image">
+                <p>J'ai travaillé chez **Verdot Ips2** pendant trois étés, soit un mois chaque année sur une période de trois ans. Cette expérience m'a permis de développer des compétences techniques dans un environnement industriel exigeant. J'ai participé à la préparation et à l'assemblage de divers équipements, en veillant à la précision des installations et à la conformité des normes de sécurité. Cela m'a également appris à m'adapter rapidement aux nouveaux environnements de travail et à gérer des tâches variées, parfois complexes, tout en restant rigoureux.</p>
+            </div>
+            <div class="card">
+                <h3>Travail sur les Maïs – 3 mois de travail sur 3 ans</h3>
+                <img src="" alt="Travail sur les Maïs" id="card-image">
+                <p>Sur une période de trois ans, j'ai travaillé chaque année pendant un mois à la **casiérisation de maïs**. Cette tâche impliquait la **manipulation et le stockage des grains de maïs** dans des conditions optimales. J'ai été chargé de superviser le processus de récolte, de contrôler la qualité du produit et d’assurer un stockage adéquat pour éviter toute perte. Cette expérience m'a appris à gérer de grands volumes de production, à travailler de manière autonome et à respecter des délais serrés.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Section Projets -->
@@ -56,34 +69,28 @@
         <h2>Mes Projets</h2>
         <div class="projets">
             <div class="card">
-                <img src="/bowling-pin.jpg" alt="Projet 1">
-                <h3>Projet 1</h3>
-                <p>Description du projet 1.</p>
+                <h3>Programmation du Robot Maqueen</h3>
+                <img src="python.png" alt="python-logo">
+                <p>Ce projet de programmation avait pour but de faire évoluer un robot Maqueen afin qu'il réalise un parcours autonome. Le robot devait d'abord suivre une ligne, puis en sortir, se rendre jusqu'à un trou pour y poser une balle, revenir sur la ligne et enfin compléter le circuit.
+                    J'ai pris en charge l'intégralité de la programmation Python, en intégrant les algorithmes nécessaires pour gérer les capteurs du robot, coordonner ses mouvements et assurer la fluidité des différentes étapes du parcours.
+                </p>
                 <a href="/Projets/projet1.html">
                     <button>Voir le projet</button>
                 </a>
             </div>
             <div class="card">
-                <img src="/bowling-pin.jpg" alt="Projet 2">
-                <h3>Projet 2</h3>
-                <p>Description du projet 2.</p>
-                <a href="/Projets/projet2.html">
-                    <button>Voir le projet</button>
-                </a>
-            </div>
-            <div class="card">
-                <img src="/bowling-pin.jpg" alt="Projet 3">
-                <h3>Projet 3</h3>
-                <p>Description du projet 3.</p>
+                <h3>La sécurisation des mots de passe</h3>
+                <img src="cle.webp" alt="clé">
+                <p>Dans le cadre de ma formation en 1ère année de BUT Réseaux et Télécommunications, ce projet réalisé en groupe avait pour objectif d’étudier les risques associés à la compromission des mots de passe pour les particuliers et les entreprises. Nous avons exploré les conséquences financières, l’usurpation d’identité et l'impact sur la santé mentale des victimes. Par la suite, nous avons présenté des solutions pour renforcer la sécurité des mots de passe, telles que la création de mots de passe complexes, l’utilisation de gestionnaires de mots de passe, et l'authentification à deux facteurs.</p>
                 <a href="/Projets/projet3.html">
                     <button>Voir le projet</button>
                 </a>
             </div>
             <div class="card">
-                <img src="/bowling-pin.jpg" alt="Projet 2">
-                <h3>Projet 4</h3>
-                <p>Description du projet 4.</p>
-                <a href="/Projets/projet4.html">
+                <h3>Logiciel de Gestion de Bibliothèque</h3>
+                <img src="python.png" alt="python-logo">
+                <p>Dans ce projet, j'ai développé un logiciel de gestion de bibliothèque permettant de gérer les prêts et les retours de livres. L'application offre également des fonctionnalités complètes pour ajouter, éditer et supprimer des livres dans la base de données. Le projet a été réalisé en Python, avec l'utilisation de Tkinter pour l'interface graphique et SQLite pour la gestion de la base de données.</p>
+                <a href="/Projets/projet2.html">
                     <button>Voir le projet</button>
                 </a>
             </div>
@@ -94,6 +101,24 @@
     <section id="competences">
         <h2>Mes Compétences</h2>
         <p>Exemples de compétences.</p>
+    </section>
+
+    <!-- Section Loisirs -->
+    <section id="loisirs">
+        <h2>Mes Loisirs</h2>
+        <div class="projets">
+            <div class="card">
+                <h3>Objets Connectés</h3>
+                <img src="smartthings.png" alt="Smartthings" id="card-image-smartthings">
+                <img src="home-assistant.png" alt="Home Assistant" id="card-image-homeassistant">
+                <p>Je m'intéresse particulièrement aux objets connectés et à la domotique, et utilise des applications comme Home Assistant et SmartThings pour gérer des éléments comme les lumières, portes, portails, fenêtres et radiateurs par exemple. J'ai développé mes propres automatisations, ce qui me permet de rendre mon environnement plus confortable et fonctionnel. Je vais également jusqu’à modifier les pilotes d'appareils initialement non compatibles pour les intégrer à mon système domotique, maximisant ainsi leur potentiel et leur efficacité dans mon réseau.</p>
+            </div>
+            <div class="card">
+                <h3>Bowling</h3>
+                <img src="bbowl.png" alt="Quille" class="card-image">
+                <p>Le bowling est un sport que je pratique au club de la B.Bowl a La Pardieu et que je trouve particulièrement captivant. J'apprécie non seulement son aspect stratégique et compétitif, mais je m'y intéresse également de manière approfondie. Je passe énormément de temps à étudier toutes les caractéristiques du jeu et à discuter avec d'autres passionnés, en leur demandant régulièrement des conseils pour améliorer mon jeu. À partir de l’année prochaine, je prévois de rejoindre des ligues pour continuer à progresser et relever de nouveaux défis dans ce sport.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Section Contact -->

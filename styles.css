@@ -15,10 +15,9 @@ body {
 
 /* Style de la barre de navigation */
 nav {
-    padding: 10px 20px;
-    height: 40px;
+    height: 50px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: #40434E;
@@ -57,7 +56,7 @@ a:hover {
 .bar {
     width: 25px;
     height: 3px;
-    margin: 5px 0;
+    margin: 3px 10px;
     background-color: #F6ECE9;
 }
 
@@ -69,13 +68,12 @@ a:hover {
         width: 100%;
         background-color: #40434E;
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 50px;
     }
 
     .menu a {
         text-align: center;
-        padding: 15px;
+        padding: 10px;
         width: 100%;
     }
 
@@ -85,6 +83,7 @@ a:hover {
 
     .navbar.show .menu {
         display: flex;
+        align-items: center;
     }
 }
 
@@ -132,7 +131,7 @@ section#formation p {
     color: #555;
 }
 
-/* Section Experience */
+/* Section Expérience Professionnelle */
 section#experience {
     padding: 50px 20px;
     background-color: #fff;
@@ -143,9 +142,39 @@ section#experience h2 {
     margin-bottom: 20px;
 }
 
-section#experience p {
-    font-size: 18px;
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.experience .card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.experience .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #40434E;
+}
+
+.experience .card p {
+    font-size: 16px;
     color: #555;
+    line-height: 1.5;
+}
+
+#card-image {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* Section Projets */
@@ -159,23 +188,25 @@ section#projets h2 {
 }
 
 .projets {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
+    overflow-x: auto;
 }
 
 .projets .card {
+    flex: 1;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-width: 300px;
 }
 
 .projets .card img {
-    width: 100%;
-    border-radius: 10px;
+    width: 25%;
     height: auto;
 }
 
@@ -217,10 +248,38 @@ section#competences p {
     color: #555;
 }
 
+/* Section Loisirs */
+section#loisirs {
+    padding: 50px 20px;
+}
+
+section#loisirs h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section#loisirs p {
+    font-size: 18px;
+    color: #555;
+}
+
+#card-image-smartthings {
+    width: 15%;
+    height: auto;
+}
+
+#card-image-homeassistant {
+    width: 13%;
+    height: auto;
+    padding-bottom: 8px;
+    padding-left: 50px;
+}
+
 /* Section Contact */
 section#contact {
     padding: 30px 20px;
     text-align: center;
+    background-color: #fff;
 }
 
 section#contact h2 {
