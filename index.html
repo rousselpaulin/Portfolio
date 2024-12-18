@@ -38,13 +38,58 @@
     <!-- Section À propos -->
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Je m’appelle Paulin Roussel et je suis étudiant en première année de BUT Réseaux et Télécommunications sur le site d’Aubière à Clermont-Ferrand. Passionné par le domaine de la cybersécurité, je me prépare activement à intégrer ce secteur grâce à mes études, mes expériences professionnelles et mes projets concrets.</p>
-    </section>
+        <div class="about-contenu">
+            <img src="black.jpg" alt="ma-photo" class="portrait-image">
+            <div class="text-contenu">
+                <p>
+                    Je m'appelle Paulin Roussel, étudiant en BUT Réseaux et Télécommunications à Clermont-Ferrand (site d'Aubière).
+                    Titulaire d’un baccalauréat général mention Bien avec les spécialités Mathématiques et Numérique et Sciences Informatiques,
+                    j'ai développé très tôt un intérêt pour la cybersécurité et les systèmes informatiques.
+                </p>
+                <br>
+                <p>
+                    Mon goût pour ce domaine a émergé lors de mon stage de 3ᵉ à la Direction Opérationnelle des Systèmes d’Information des Cézeaux,
+                    où j’ai pu observer la gestion des réseaux, le développement web et l’administration de serveurs dédiés aux calculs intensifs.
+                    Cette expérience m’a donné envie de me spécialiser dans ce secteur.
+                </p>
+                <br>
+                <p>
+                    J’ai également travaillé sur des projets concrets, notamment en programmation Python.
+                    En terminale NSI, j’ai développé un logiciel de gestion de bibliothèque, permettant de gérer les prêts et retours de livres
+                    et d’administrer la base de données. J’ai aussi participé à un projet où nous avons programmé un robot Maqueen pour qu’il suive
+                    une ligne de manière optimale. Ces projets m’ont permis de renforcer mes compétences en programmation et en gestion de bases de données.
+                </p>
+                <br>
+                <p>
+                    J’ai également une expérience professionnelle en tant que technicien/monteur chez Verdot Ips2, où j’ai gagné en autonomie et en rigueur.
+                    J’ai su m’adapter rapidement et accomplir mes tâches efficacement, même face à des défis complexes.
+                </p>
+                <br>
+                <p>
+                    Aujourd’hui, je souhaite poursuivre en alternance dès ma deuxième année de BUT afin de continuer à développer mes compétences techniques
+                    et professionnelles dans le domaine des réseaux et de la cybersécurité.
+                </p>
+            </div>
+        </div>
+        <a href="">
+            <button>Télécharger mon CV</button>
+        </a>
+    </section>    
 
     <!-- Section Formation -->
     <section id="formation">
         <h2>Formation</h2>
-        <p>Exemples de formations.</p>
+        <div class="projets">
+            <div class="card">
+                <h3>BUT- Réseaux et Télécommunications</h3>
+                <img src="" alt="iut-batiment" id="card-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur, purus id varius luctus, purus mi vehicula magna, non feugiat libero eros a libero. Cras facilisis, mi sit amet tincidunt faucibus, nisl felis tempus est, vitae dictum justo felis et risus.</p>
+            </div>
+            <div class="card">
+                <h3>Lycée Lafayette</h3>
+                <img src="lafayette.jpg" alt="Lafayette" id="card-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur, purus id varius luctus, purus mi vehicula magna, non feugiat libero eros a libero. Cras facilisis, mi sit amet tincidunt faucibus, nisl felis tempus est, vitae dictum justo felis et risus.</p>
+            </div>
     </section>
 
     <!-- Section Experience -->
@@ -99,8 +144,45 @@
 
     <!-- Section Compétences -->
     <section id="competences">
-        <h2>Mes Compétences</h2>
-        <p>Exemples de compétences.</p>
+        <h2>Compétences</h2>
+        <div class="competences">
+            <div class="card">
+                <h3>Programmation Python</h3>
+                <img src="python.png" alt="logo-python">
+                <p>Brève description de la compétence 1.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <div class="percentage"><strong>90%</strong></div>
+            </div>
+            <div class="card">
+                <h3>Programmation WEB</h3>
+                <img src="html.png" alt="logo-html">
+                <p>Brève description de la compétence 2.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+                <div class="percentage"><strong>80%</strong></div>
+            </div>
+            <div class="card">
+                <h3>Système</h3>
+                <img src="linux.png" alt="logo-linux">
+                <p>Brève description de la compétence 3.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <div class="percentage"><strong>60%</strong></div>
+            </div>
+            <div class="card">
+                <h3>Réseau</h3>
+                <img src="packet-tracer.webp" alt="logo-packet-tracer">
+                <p>Brève description de la compétence 4.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+                <div class="percentage"><strong>70%</strong></div>
+            </div>
+        </div>
     </section>
 
     <!-- Section Loisirs -->
@@ -111,11 +193,11 @@
                 <h3>Objets Connectés</h3>
                 <img src="smartthings.png" alt="Smartthings" id="card-image-smartthings">
                 <img src="home-assistant.png" alt="Home Assistant" id="card-image-homeassistant">
-                <p>Je m'intéresse particulièrement aux objets connectés et à la domotique, et utilise des applications comme Home Assistant et SmartThings pour gérer des éléments comme les lumières, portes, portails, fenêtres et radiateurs par exemple. J'ai développé mes propres automatisations, ce qui me permet de rendre mon environnement plus confortable et fonctionnel. Je vais également jusqu’à modifier les pilotes d'appareils initialement non compatibles pour les intégrer à mon système domotique, maximisant ainsi leur potentiel et leur efficacité dans mon réseau.</p>
+                <p>Je m'intéresse particulièrement aux objets connectés et à la domotique, et utilise des applications comme Home Assistant et SmartThings pour gérer des éléments comme les lumières, portes, portails, fenêtres et radiateurs par exemple. J'ai développé mes propres automatisations, ce qui me permet de rendre mon environnement plus confortable et fonctionnel. Jái également modifié certains pilotes d'appareils initialement non compatibles pour les intégrer à mon système domotique, maximisant ainsi leur potentiel et leur efficacité dans mon réseau.</p>
             </div>
             <div class="card">
                 <h3>Bowling</h3>
-                <img src="bbowl.png" alt="Quille" class="card-image">
+                <img src="bbowl.png" alt="Quille" id="card-image-bbowl">
                 <p>Le bowling est un sport que je pratique au club de la B.Bowl a La Pardieu et que je trouve particulièrement captivant. J'apprécie non seulement son aspect stratégique et compétitif, mais je m'y intéresse également de manière approfondie. Je passe énormément de temps à étudier toutes les caractéristiques du jeu et à discuter avec d'autres passionnés, en leur demandant régulièrement des conseils pour améliorer mon jeu. À partir de l’année prochaine, je prévois de rejoindre des ligues pour continuer à progresser et relever de nouveaux défis dans ce sport.</p>
             </div>
         </div>
@@ -124,13 +206,10 @@
     <!-- Section Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Vous pouvez me contacter par email à: <a href="mailto:paulin.roussel@etu.uca.fr">paulin.roussel@etu.uca.fr</a></p>
+        <p>Email :<a href="mailto:paulin.roussel@etu.uca.fr">paulin.roussel@etu.uca.fr</a></p>
+        <p>Téléphone : <a href="tel:+33777000352">+33 7 77 00 03 52</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/tonprofil/" target="_blank">Mon LinkedIn</a></p>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Mon Portfolio</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>

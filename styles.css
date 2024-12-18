@@ -10,7 +10,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #F6ECE9;
+    background-color: #F5F5F5;
 }
 
 /* Style de la barre de navigation */
@@ -23,6 +23,7 @@ nav {
     background-color: #40434E;
     position: fixed;
     transition: top 0.3s;
+    z-index: 3;
 }
 
 .nom {
@@ -37,7 +38,7 @@ a {
     margin: 0 7px;
     text-decoration: none;
     font-weight: bold;
-    color: #F6ECE9;
+    color: #FFF;
 }
 
 a:hover {
@@ -87,23 +88,23 @@ a:hover {
     }
 }
 
-
 /* Section d'introduction */
 section#home {
     text-align: center;
-    padding: 100px 20px;
+    padding: 55px 20px;
 }
 
 section#home h1 {
     font-size: 50px;
-    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 /* Section À propos */
 section#about {
     padding: 50px 20px;
-    text-align: center;
     background-color: #fff;
+    text-align: center;
 }
 
 section#about h2 {
@@ -111,14 +112,58 @@ section#about h2 {
     margin-bottom: 20px;
 }
 
+section#about .portrait-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+section#about .about-contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section#about .text-content {
+    text-align: left;
+}
+
 section#about p {
-    font-size: 18px;
+    font-size: 15px;
     color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section#about button {
+    margin-top: 45px;
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #D32F2F;
+    font-weight: bold;
+    border-color: #D32F2F;
+    transition: all 0.2s ease;
+}
+
+section#about button:hover {
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #D32F2F;
+    color: #fff;
+    font-weight: bold;
+    border-color: #D32F2F;
+    cursor: pointer;
 }
 
 /* Section Formation */
 section#formation {
-    padding: 50px 20px;
+    padding: 30px 70px;
 }
 
 section#formation h2 {
@@ -133,41 +178,13 @@ section#formation p {
 
 /* Section Expérience Professionnelle */
 section#experience {
-    padding: 50px 20px;
+    padding: 30px 70px;
     background-color: #fff;
 }
 
 section#experience h2 {
     font-size: 30px;
     margin-bottom: 20px;
-}
-
-.experience {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.experience .card {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.experience .card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #40434E;
-}
-
-.experience .card p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
 }
 
 #card-image {
@@ -179,7 +196,7 @@ section#experience h2 {
 
 /* Section Projets */
 section#projets {
-    padding: 50px 20px;
+    padding: 30px 70px;
 }
 
 section#projets h2 {
@@ -193,6 +210,7 @@ section#projets h2 {
     gap: 20px;
     margin-top: 20px;
     overflow-x: auto;
+    overflow: visible;
 }
 
 .projets .card {
@@ -203,6 +221,12 @@ section#projets h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     min-width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projets .card:hover {
+    transform: translateY(-10px) scale(1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .projets .card img {
@@ -234,7 +258,7 @@ button:hover {
 
 /* Section Compétences */
 section#competences {
-    padding: 50px 20px;
+    padding: 30px 70px;
     background-color: #fff;
 }
 
@@ -248,9 +272,54 @@ section#competences p {
     color: #555;
 }
 
+.competences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    overflow-x: auto;
+    overflow: visible;
+}
+
+.competences .card {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.competences .card:hover {
+    transform: translateY(-10px) scale(1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.competences .card img {
+    width: auto;
+    height: 100px;
+}
+
+.progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #D32F2F;
+    height: 100%;
+    border-radius: 25px;
+}
+
 /* Section Loisirs */
 section#loisirs {
-    padding: 50px 20px;
+    padding: 30px 70px;
 }
 
 section#loisirs h2 {
@@ -271,13 +340,20 @@ section#loisirs p {
 #card-image-homeassistant {
     width: 13%;
     height: auto;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     padding-left: 50px;
+}
+
+#card-image-bbowl {
+    width: 25%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 /* Section Contact */
 section#contact {
-    padding: 30px 20px;
+    padding: 30px 70px;
     text-align: center;
     background-color: #fff;
 }
@@ -296,10 +372,4 @@ section#contact a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-}
-
-/* Footer */
-footer {
-    padding-top: 10px;
-    background-color: #333;
 }
