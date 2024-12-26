@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="nom"><a>Mes Projets</a></div>
+        <div class="menu">
+            <a href="#home">Maqueen</a>
+            <a href="../projet2/index.html">Sécurisation des mots de passe</a>
+            <a href="../projet3/index.html">Bibliothèque</a>
+        </div>
+        <div class="burger" id="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 
+    <!-- Section d'introduction -->
+    <section id="home">
+        <h1>Projet Maqueen Plus</h1>
+    </section>
+
+    <!-- Section Contexte -->
+    <section id="contexte">
+        <h2>Projet Maqueen Plus - Suivi de ligne et dépose de balle</h2>
+        <h3>Contexte</h3>
+        <p>
+            Ce projet a été réalisé dans le cadre du cours de Sciences de l'Ingénieur en 1ère, d'une durée de 12 heures. Le but était de programmer le robot Maqueen Plus pour qu'il suive une ligne, s'arrête à un endroit spécifique, dépose une balle, puis revienne sur la piste pour terminer le parcours.
+        </p>
+    </section> 
+
+    <!-- Section Objectif -->
+    <section id="objectif">
+        <div class="media">
+            <div class="texte">
+                <h3>Objectif</h3>
+                <p>
+                    L'objectif de ce projet était de coder le robot en python afin qu'il effectue un parcours prédéfini en toute autonomie, avec la contrainte supplémentaire de tenir et de déposer une balle à un endroit précis du parcours. La balle devait être maintenue par une pince, fixée au robot grâce à une pièce en 3D que nous avons modélisée.
+                </p>
+                <h3>Travail Réalisé</h3>
+                <p>
+                    J'ai développé le code, grâce au site Vittascience, permettant au robot de suivre une ligne à l'aide de capteurs, de s'arrêter au bon moment, de déposer la balle et de reprendre la route. Le code gérait également la pince pour tenir et libérer la balle.
+                </p>
+                <iframe width='100%' allowfullscreen frameborder='0' src="https://fr.vittascience.com/microbit/?link=63f8dcf472382&mode=codeOnly&embed=1"></iframe>
+                <h3>Pièce 3D</h3>
+                <p>
+                    Mon partenaire a conçu et imprimé en 3D la pièce qui permettait de fixer la pince au robot, garantissant ainsi la stabilité de la balle pendant le parcours.
+                </p>
+                <iframe src="https://www.viewstl.com/?embedded&orientation=bottom&url=https%3A%2F%2Fraw.githubusercontent.com%2FL1NP%2FPortfolio%2Fmain%2FMaqueen.stl&rotation=yes&clean=no&shading=flat&edges=no"></iframe>
+            </div>
+            <div class="videos">
+                <h3 class="titre-video">Démonstration</h3>
+                <video controls>
+                    <source src="maqueen1.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la balise vidéo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Résultat -->
+    <section id="resultat">
+        <h3>Resultat</h3>
+        <p>
+            Le projet a abouti à l'obtention du meilleur chrono de la classe, prouvant l'efficacité du programme et la solidité de la conception.
+            De plus, un exposé a été réalisé pour expliquer le déroulement du projet et les défis rencontrés et surmontés tout au long de la réalisation.
+        </p>
+        <iframe src="https://1drv.ms/p/s!An41GivLoXhLxVGPUDHPF7y_ZmzD?embed=1&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=0" width="100%" height="650px" frameborder="0"></iframe>
+    </section> 
+
+</body>
+</html>
