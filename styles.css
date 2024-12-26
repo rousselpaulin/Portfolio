@@ -102,14 +102,14 @@ section#home h1 {
 
 /* Section À propos */
 section#about {
-    padding: 50px 20px;
+    padding: 10px 20px;
     background-color: #fff;
     text-align: center;
 }
 
 section#about h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 section#about .portrait-image {
@@ -126,16 +126,12 @@ section#about .about-contenu {
     gap: 50px;
 }
 
-section#about .text-content {
-    text-align: left;
-}
-
 section#about p {
     font-size: 15px;
     color: #555;
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
 }
 
 section#about button {
@@ -161,9 +157,27 @@ section#about button:hover {
     cursor: pointer;
 }
 
+/* Ajustement responsive pour la section À propos */
+@media (max-width: 768px) {
+    section#about .about-contenu {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    section#about .portrait-image {
+        width: 150px;
+        height: auto;
+        margin-bottom: 0;
+    }
+}
+
 /* Section Formation */
 section#formation {
-    padding: 30px 70px;
+    padding: 30px 30px;
+    padding-top: 10px;
 }
 
 section#formation h2 {
@@ -178,7 +192,8 @@ section#formation p {
 
 /* Section Expérience Professionnelle */
 section#experience {
-    padding: 30px 70px;
+    padding: 30px;
+    padding-top: 10px;
     background-color: #fff;
 }
 
@@ -196,7 +211,8 @@ section#experience h2 {
 
 /* Section Projets */
 section#projets {
-    padding: 30px 70px;
+    padding: 30px 30px;
+    padding-top: 10px;
 }
 
 section#projets h2 {
@@ -206,15 +222,15 @@ section#projets h2 {
 
 .projets {
     display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-right: 20px;
     overflow-x: auto;
-    overflow: visible;
 }
 
 .projets .card {
-    flex: 1;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -258,7 +274,8 @@ button:hover {
 
 /* Section Compétences */
 section#competences {
-    padding: 30px 70px;
+    padding: 30px 30px;
+    padding-top: 10px;
     background-color: #fff;
 }
 
@@ -278,7 +295,6 @@ section#competences p {
     gap: 20px;
     margin-top: 20px;
     overflow-x: auto;
-    overflow: visible;
 }
 
 .competences .card {
@@ -319,7 +335,8 @@ section#competences p {
 
 /* Section Loisirs */
 section#loisirs {
-    padding: 30px 70px;
+    padding: 30px 30px;
+    padding-top: 10px;
 }
 
 section#loisirs h2 {
