@@ -1,0 +1,107 @@
+* {
+    font-family: 'Koh Santepheap';
+    color: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+/* Style de la barre de navigation */
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #40434E;
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 3;
+}
+
+.nom {
+    margin-right: auto
+}
+
+.nom a:hover {
+    text-decoration: none;
+}
+
+a {
+    margin: 0 7px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #D32F2F;
+    text-decoration-thickness: 20%;
+}
+
+.menu a:nth-child(2) {
+    text-decoration: underline;
+    text-decoration-color: #D32F2F;
+    text-decoration-thickness: 20%;
+}
+
+/* Cacher les éléments du menu pour mobile */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 10px;
+    background-color: #F6ECE9;
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #40434E;
+        position: absolute;
+        top: 50px;
+    }
+
+    .menu a {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar.show .menu {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Section d'introduction */
+section#home {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+section#home h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
