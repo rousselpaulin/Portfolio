@@ -53,47 +53,6 @@ a:hover {
     text-decoration-thickness: 20%;
 }
 
-/* Cacher les éléments du menu pour mobile */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    margin: 3px 10px;
-    background-color: #F6ECE9;
-}
-
-/* Pour les écrans plus petits */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #40434E;
-        position: absolute;
-        top: 50px;
-    }
-
-    .menu a {
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .navbar.show .menu {
-        display: flex;
-        align-items: center;
-    }
-}
-
 /* Section d'introduction */
 section#home {
     text-align: center;
@@ -192,4 +151,30 @@ section#resultat {
 section#resultat h2 {
     font-size: 30px;
     margin-bottom: 30px;
+}
+
+/* Positionnement du bouton en bas à gauche */
+.btn-retour {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin-top: 25px;
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #D32F2F;
+    font-weight: bold;
+    border: 2px solid #D32F2F;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-retour:hover {
+    background-color: #D32F2F;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }
