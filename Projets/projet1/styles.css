@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
+    margin-bottom: 85px;
 }
 
 /* Style de la barre de navigation */
@@ -151,6 +152,33 @@ section#resultat {
 section#resultat h2 {
     font-size: 30px;
     margin-bottom: 30px;
+}
+
+section#resultat .telecharger {
+    text-align: center;
+}
+
+section#resultat button {
+    margin-top: 25px;
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #D32F2F;
+    font-weight: bold;
+    border-color: #D32F2F;
+    transition: all 0.2s ease;
+}
+
+section#resultat button:hover {
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #D32F2F;
+    color: #fff;
+    font-weight: bold;
+    border-color: #D32F2F;
+    cursor: pointer;
 }
 
 /* Positionnement du bouton en bas à gauche */
