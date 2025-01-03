@@ -157,7 +157,7 @@ section#about button:hover {
     cursor: pointer;
 }
 
-/* Ajustement responsive pour la section À propos */
+/* Ajustement pour la section À propos */
 @media (max-width: 768px) {
     section#about .about-contenu {
         flex-direction: row;
@@ -188,6 +188,12 @@ section#formation h2 {
 section#formation p {
     font-size: 18px;
     color: #555;
+}
+
+section#formation img {
+    height: auto;
+    max-width: 400px;
+    min-width: 300px;
 }
 
 /* Section Expérience Professionnelle */
@@ -284,9 +290,11 @@ section#competences h2 {
     margin-bottom: 20px;
 }
 
-section#competences p {
+section#competences ul {
     font-size: 18px;
     color: #555;
+    list-style: none;
+    padding: 0;
 }
 
 .competences {
@@ -306,6 +314,7 @@ section#competences p {
     text-align: center;
     min-width: 300px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
 }
 
 .competences .card:hover {
