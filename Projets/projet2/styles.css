@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
+    margin-bottom: 55px;
 }
 
 /* Style de la barre de navigation */
@@ -104,4 +105,100 @@ section#home h1 {
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 10px;
+}
+
+/* Section Contexte */
+section#contexte {
+    padding: 10px 20px;
+    background-color: #fff;
+    text-align: justify;
+}
+
+section#contexte h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Section Objectif */
+section#objectif {
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+/* Section Travail */
+section#travail {
+    padding: 10px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+section#travail p {
+    text-align: justify;
+}
+
+.topologie-img {
+    width: 40%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wireshark-img {
+    width: 20%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.appels-img {
+    width: 20%;
+    height: auto;
+    border: 2px solid black;
+}
+
+figure {
+    width: 100%;
+}
+
+img {
+  width: 75%;
+  height: auto;
+  border: 2px solid black;
+}
+
+/* Section Résultat */
+section#resultat {
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+/* Positionnement du bouton en bas à gauche */
+.btn-retour {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin-top: 25px;
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #D32F2F;
+    font-weight: bold;
+    border: 2px solid #D32F2F;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-retour:hover {
+    background-color: #D32F2F;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }

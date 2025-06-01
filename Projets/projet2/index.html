@@ -15,7 +15,7 @@
         <div class="nom"><a>Mes Projets</a></div>
         <div class="menu">
             <a href="../projet1/index.html">Maqueen</a>
-            <a href="#home">Sécurisation des mots de passe</a>
+            <a href="#home">Téléphonie</a>
             <a href="../projet3/index.html">Bibliothèque</a>
         </div>
         <div class="burger" id="burger">
@@ -27,5 +27,100 @@
 
     <!-- Section d'introduction -->
     <section id="home">
-        <h1>Projet Sécurisation des mots de passe</h1>
+        <h1>Projet Téléphonie IP</h1>
     </section>
+
+    <!-- Section Contexte -->
+    <section id="contexte">
+        <h2>Configuration d’un système de téléphonie IP avec Call Server et téléphones OpenStage</h2>
+        <h3>Contexte</h3>
+        <p>
+            Ce projet a été réalisé lors de ma première année de BUT Réseaux & Télécommunications. L’objectif était de déployer une solution de téléphonie IP fonctionnelle, incluant la configuration d’un Call Server, de téléphones IP, et d’un softphone.
+        </p>
+    </section>
+
+    <!-- Section Objectif -->
+    <section id="objectif">
+        <h3>Objectif</h3>
+        <p>
+            L’objectif était de configurer manuellement l’ensemble des éléments d’un réseau de téléphonie IP : création d’abonnés, affectation des SDA, configuration des postes téléphoniques, mise en place d’un softphone et gestion des appels entrants/sortants. L’accent était mis sur la compréhension du fonctionnement du protocole SIP et sur la capacité à diagnostiquer le réseau à l’aide d’outils comme Wireshark.
+        </p>
+    </section>
+
+    <!-- Section Travail -->
+    <section id="travail">
+        <h3>Travail Réalisé</h3>
+        <ul>
+        <li>
+            <p>
+            Le projet s’est déroulé sur 9 heures réparties sur 3 séances de TP de 3 heures, réalisées principalement en autonomie et en groupe, avec la possibilité de demander de l’aide en cas de blocage. L’ensemble de la configuration a été faite manuellement, sans assistant automatique, afin de mieux comprendre le fonctionnement interne d’un système de téléphonie IP.
+            </p>
+            <img src="topologie.png" alt="topologie" class="topologie-img">
+        </li>
+        <li>
+            <p>
+            Nous avons commencé par restaurer la configuration du Call Server en accédant à son interface web via son adresse IP. Une fois la base de données restaurée, nous avons réalisé la topologie réseau nécessaire, en tenant compte du fait que les téléphones fonctionnent en PoE et n’ont donc pas besoin d’alimentation externe.
+            </p>
+        </li>
+        <li>
+            <p>
+            Ensuite, nous avons créé les abonnés dans l’interface d’administration du Call Server. Nous avons ensuite configuré deux téléphones IP (OpenStage 60 et 15) en les réinitialisant, puis en accédant à leur interface de configuration. L’un des téléphones étant défectueux, nous avons poursuivi les manipulations principalement avec le modèle fonctionnel.
+            </p>
+            <div class="images">
+                <figure>
+                    <figcaption>CallServeur</figcaption>
+                    <a href="callserveur-config.png" target="_blank">
+                        <img src="callserveur-config.png" alt="callserveur-config">
+                    </a>
+                </figure>
+                <figure>
+                    <figcaption>Téléphone SIP</figcaption>
+                    <a href="telephoneSIP-config.png" target="_blank">
+                        <img src="telephoneSIP-config.png" alt="telephoneSIP-config">
+                    </a>
+                </figure>
+            </div>
+        </li>
+        <li>
+            <p>
+            Une fois les téléphones configurés, nous avons procédé à la mise en place d’un softphone à l’aide du logiciel Xlite. Pour cela, nous avons récupéré les identifiants SIP d’un abonné et les avons renseignés dans le logiciel, ce qui nous a permis de recevoir et d’émettre des appels depuis un poste logiciel.
+            </p>
+            <div class="images">
+                <figure>
+                    <figcaption>Xlite</figcaption>
+                    <img src="xlite.png" alt="xlite">
+                </figure>
+                <figure>
+                    <figcaption>Configuration Xlite</figcaption>
+                    <img src="xlite-config.png" alt="xlite-config">
+                </figure>
+            </div>
+        </li>
+        <li>
+            <p>
+            Nous avons analysé le fonctionnement du protocole SIP à l’aide de captures de trames sur Wireshark. Cela nous a permis de mieux comprendre en détail les étapes d’un appel (REGISTER, INVITE, RINGING, OK…) ainsi que d’expérimenter la création de groupes d’appel (cyclique, linéaire, simultané), la mise en place de renvois d’appel, et l’utilisation de la messagerie vocale via l’application MyPortal.
+            </p>
+            <img src="wireshark.png" alt="wireshark" class="wireshark-img">
+        </li>
+        <li>
+            <p>
+            Pour compléter l’infrastructure, nous avons également activé un trunk SIP afin de permettre les appels vers l’extérieur, en suivant une procédure fournie.
+            </p>
+            <img src="appels.png" alt="appels" class="appels-img">
+        </li>
+        </ul>
+    </section>
+
+    <!-- Section Resultat -->
+    <section id="resultat">
+        <h3>Résultat</h3>
+        <p>
+            L’ensemble de la configuration a bien fonctionné : les téléphones étaient opérationnels, et les appels passaient correctement, aussi bien en interne qu’avec le softphone. Grâce à ce projet, j’ai pu mieux comprendre le fonctionnement global d’un système de téléphonie IP, notamment le rôle du Call Server, la configuration des abonnés et le protocole SIP. Ce travail m’a également bien préparé pour le contrôle réalisé à la fin du module, mais je n’ai malheureusement pas encore reçu la note.
+        </p>
+    </section>
+
+    <!-- Section Retour -->
+    <a href="../../index.html" class="btn-retour">Retour Portfolio</a>
+
+</body>
+</html>
