@@ -54,47 +54,6 @@ a:hover {
     text-decoration-thickness: 20%;
 }
 
-/* Cacher les éléments du menu pour mobile */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    margin: 3px 10px;
-    background-color: #F6ECE9;
-}
-
-/* Pour les écrans plus petits */
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #40434E;
-        position: absolute;
-        top: 50px;
-    }
-
-    .menu a {
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .navbar.show .menu {
-        display: flex;
-        align-items: center;
-    }
-}
-
 /* Section d'introduction */
 section#home {
     text-align: center;
@@ -135,6 +94,27 @@ section#travail {
 
 section#travail p {
     text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .topologie-img,
+    .wireshark-img,
+    .appels-img,
+    .images img {
+        width: 80% !important;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .topologie-img {
