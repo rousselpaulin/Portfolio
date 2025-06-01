@@ -101,7 +101,7 @@ section#travail p {
     .wireshark-img,
     .appels-img,
     .images img {
-        width: 80% !important;
+        width: 90% !important;
         display: block;
         margin: 10px auto;
     }
