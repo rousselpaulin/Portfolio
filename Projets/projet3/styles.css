@@ -48,7 +48,7 @@ a:hover {
     text-decoration-thickness: 20%;
 }
 
-.menu a:nth-child(2) {
+.menu a:nth-child(3) {
     text-decoration: underline;
     text-decoration-color: #D32F2F;
     text-decoration-thickness: 20%;
@@ -85,21 +85,11 @@ section#objectif {
     text-align: justify;
 }
 
-section#objectif h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
 /* Section Travail */
 section#travail {
     padding: 10px 20px;
     background-color: #fff;
     text-align: center;
-}
-
-section#travail h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
 }
 
 section#travail p {
@@ -146,11 +136,6 @@ section#travail button:hover {
 section#resultat {
     padding: 10px 20px;
     text-align: justify;
-}
-
-section#resultat h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
 }
 
 /* Positionnement du bouton en bas à gauche */
