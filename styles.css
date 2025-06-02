@@ -323,6 +323,14 @@ section#competences ul {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .competences {
+    grid-template-columns: 1fr;
+    overflow-x: unset;
+    padding: 30px;
+  }
+}
+
 .competences .card:hover {
     transform: translateY(-10px) scale(1);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
