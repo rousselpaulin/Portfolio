@@ -329,6 +329,9 @@ section#competences ul {
     overflow-x: unset;
     padding: 30px;
   }
+ .competences .card {
+    min-width: 320px;
+  }
 }
 
 .competences .card:hover {
