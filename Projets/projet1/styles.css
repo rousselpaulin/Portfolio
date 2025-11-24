@@ -48,7 +48,7 @@ a:hover {
     text-decoration-thickness: 20%;
 }
 
-.menu a:first-child {
+.menu a:nth-child(4) {
     text-decoration: underline;
     text-decoration-color: #D32F2F;
     text-decoration-thickness: 20%;
