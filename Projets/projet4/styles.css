@@ -1,0 +1,157 @@
+* {
+    font-family: 'Koh Santepheap';
+    color: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    margin-bottom: 55px;
+}
+
+/* Style de la barre de navigation */
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #40434E;
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 3;
+}
+
+.nom {
+    margin-right: auto
+}
+
+.nom a:hover {
+    text-decoration: none;
+}
+
+a {
+    margin: 0 7px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #D32F2F;
+    text-decoration-thickness: 20%;
+}
+
+.menu a:first-child {
+    text-decoration: underline;
+    text-decoration-color: #D32F2F;
+    text-decoration-thickness: 20%;
+}
+
+/* Section d'introduction */
+section#home {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+section#home h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* Section Contexte */
+section#contexte {
+    padding: 10px 20px;
+    background-color: #fff;
+    text-align: justify;
+}
+
+section#contexte h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Section Objectif */
+section#objectif {
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+/* Section Travail */
+section#travail {
+    padding: 20px 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+section#travail p {
+    text-align: justify;
+}
+
+.db-block {
+    margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        gap: 30px;
+    }
+}
+
+.gallery {
+    display: flex;
+    gap: 200px;
+    padding: 10px 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gallery img {
+    flex: 0 0 auto;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    border: 2px solid #000;
+}
+
+/* Section Résultat */
+section#resultat {
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+/* Positionnement du bouton en bas à gauche */
+.btn-retour {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin-top: 25px;
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #D32F2F;
+    font-weight: bold;
+    border: 2px solid #D32F2F;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-retour:hover {
+    background-color: #D32F2F;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
