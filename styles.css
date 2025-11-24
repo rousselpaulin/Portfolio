@@ -261,6 +261,10 @@ section#projets h2 {
     height: auto;
 }
 
+.projets .card p {
+    text-align: justify;
+}
+
 button {
     width: 140px;
     height: 40px;
