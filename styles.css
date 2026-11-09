@@ -98,16 +98,16 @@ nav.navbar {
 header#home {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 110px 5vw 60px;
+    padding: 92px 5vw 56px;
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
-    gap: 56px;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 48px;
     align-items: start;
 }
 
 header h1 {
     font-weight: 800;
-    font-size: clamp(44px, 5vw, 76px);
+    font-size: clamp(40px, 4.4vw, 64px);
     line-height: .95;
     letter-spacing: -.015em;
 }
@@ -118,14 +118,20 @@ header h1::after {
     display: block;
     width: 120px;
     height: 16px;
-    margin-top: 20px;
+    margin-top: 16px;
     background:
         linear-gradient(var(--rouge), var(--rouge)) top / 100% 5px no-repeat,
         linear-gradient(var(--rouge), var(--rouge)) bottom / 100% 5px no-repeat;
 }
 
-.hero-paragraphes { margin-top: 30px; max-width: 66ch; font-size: 16.5px; }
-.hero-paragraphes p { margin: 0 0 14px; }
+.hero-paragraphes {
+    margin-top: 24px;
+    font-size: 15.5px;
+    line-height: 1.55;
+    columns: 2 300px;
+    column-gap: 40px;
+}
+.hero-paragraphes p { margin: 0 0 12px; break-inside: avoid; }
 .hero-paragraphes strong { font-weight: 600; }
 
 .dispo {
