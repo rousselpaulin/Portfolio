@@ -98,11 +98,14 @@ nav.navbar {
 header#home {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 92px 5vw 56px;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 84px 5vw 40px;
     display: grid;
-    grid-template-columns: 230px minmax(0, 1fr);
-    gap: 48px;
-    align-items: start;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 52px;
+    align-items: center;
+    align-content: center;
 }
 
 header h1 {
@@ -124,15 +127,15 @@ header h1::after {
         linear-gradient(var(--rouge), var(--rouge)) bottom / 100% 5px no-repeat;
 }
 
-.hero-paragraphes {
-    margin-top: 24px;
+.hero-paragraphe {
+    margin: 22px 0 0;
+    max-width: 78ch;
     font-size: 15.5px;
-    line-height: 1.55;
-    columns: 2 300px;
-    column-gap: 40px;
+    line-height: 1.6;
 }
-.hero-paragraphes p { margin: 0 0 12px; break-inside: avoid; }
-.hero-paragraphes strong { font-weight: 600; }
+.hero-paragraphe strong { font-weight: 600; }
+.hero-bas { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: 24px; }
+.hero-bas .dispo, .hero-bas .hero-actions { margin: 0; }
 
 .dispo {
     display: flex;
@@ -191,9 +194,6 @@ header .portrait-image {
     object-fit: cover;
     border-radius: 150px 150px 16px 16px;
     filter: grayscale(100%);
-    margin-top: 8px;
-    position: sticky;
-    top: 90px;
 }
 
 /* Parcours : une vraie chronologie */
