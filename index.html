@@ -23,7 +23,6 @@
     <nav class="navbar">
         <a class="nom" href="#home">Paulin Roussel</a>
         <div class="menu">
-            <a href="#about">À propos</a>
             <a href="#parcours">Parcours</a>
             <a href="#experience">Expériences</a>
             <a href="#projets">Projets</a>
@@ -39,63 +38,39 @@
     </nav>
 
     <header id="home">
+        <img src="portrait.jpg" alt="Portrait de Paulin Roussel" class="portrait-image">
         <div class="hero-texte">
             <h1>Paulin Roussel</h1>
-            <p class="hero-sous">Étudiant en BUT3 Réseaux et Télécoms, parcours cybersécurité, à Clermont-Ferrand. Je cherche une <strong>alternance en systèmes, réseaux et cybersécurité</strong>, à poursuivre en cycle ingénieur à IMT Mines Alès.</p>
+            <div class="hero-paragraphes">
+                <p>
+                    Je m'appelle <strong>Paulin Roussel</strong>, étudiant en <strong>troisième année de BUT Réseaux et Télécommunications, parcours cybersécurité</strong>, à l'IUT de Clermont-Ferrand (site d'Aubière).
+                    Je recherche une <strong>alternance</strong> en <strong>systèmes, réseaux et cybersécurité</strong>, que je souhaite poursuivre à partir de septembre 2027 en <strong>cycle ingénieur Informatique et Réseaux par apprentissage à IMT Mines Alès</strong>.
+                </p>
+<p>
+                    À terme, je veux m'orienter vers la <strong>cybersécurité</strong>, notamment le <strong>pentest</strong>.
+                    Je suis convaincu qu'on ne peut pas bien sécuriser, ni même attaquer, une infrastructure sans d'abord savoir comment elle est <strong>construite et administrée</strong> :
+                    c'est pourquoi je me forme d'abord à l'<strong>administration des systèmes et des réseaux</strong>.
+                </p>
+<p>
+                    Lors de mon <strong>stage à la DSI de l'OPHIS</strong> (avril – juin 2026), j'ai mis en place la <strong>photothèque de l'entreprise</strong>, du choix de la solution jusqu'à la mise en production,
+                    avec une <strong>authentification unique liée à l'Active Directory</strong>, des <strong>automatisations</strong> et des <strong>tests de sécurité</strong>.
+                    Chez moi, j'administre un <strong>serveur Linux auto-hébergé</strong> avec une dizaine de services sous <strong>Docker</strong>, supervisé avec <strong>Prometheus et Grafana</strong>.
+                </p>
+<p>
+                    Mon intérêt pour l'informatique est né lors de mon <strong>stage de 3ᵉ</strong> à la Direction Opérationnelle des Systèmes d'Information des Cézeaux,
+                    où j'ai découvert les <strong>réseaux</strong> et l'<strong>administration de serveurs de calcul</strong>.
+                </p>
+            
+            </div>
             <p class="dispo"><span class="voyant" aria-hidden="true"></span>Disponible dès maintenant, partout en France</p>
             <div class="hero-actions">
                 <a class="btn" href="CV-ROUSSEL-Paulin.pdf">Télécharger mon CV</a>
                 <a class="btn btn-ligne" href="mailto:paulin.roussel63@gmail.com">M'écrire</a>
             </div>
         </div>
-
-        <figure class="schema">
-            <svg viewBox="0 0 520 440" role="img" aria-labelledby="schema-titre">
-                <title id="schema-titre">Schéma de mon serveur auto-hébergé : accès depuis Internet via Tailscale, box, serveur Debian, services Docker</title>
-                <g class="fils">
-                    <path d="M260 52 V112"/>
-                    <path d="M260 148 V202"/>
-                    <path d="M260 242 C260 290 92 280 92 330"/>
-                    <path d="M260 242 C260 290 205 285 205 330"/>
-                    <path d="M260 242 C260 290 315 285 315 330"/>
-                    <path d="M260 242 C260 290 428 280 428 330"/>
-                    <path class="tirets" d="M200 34 C 96 34 96 222 180 222"/>
-                </g>
-                <g class="noeud">
-                    <rect x="200" y="16" width="120" height="36" rx="18"/>
-                    <text x="260" y="39">Internet</text>
-                </g>
-                <g class="noeud">
-                    <rect x="200" y="112" width="120" height="36" rx="6"/>
-                    <text x="260" y="135">Box</text>
-                </g>
-                <g class="noeud fort">
-                    <rect x="180" y="202" width="160" height="40" rx="6"/>
-                    <text x="260" y="227">Serveur Debian</text>
-                </g>
-                <text class="legende" x="14" y="130">VPN Tailscale</text>
-                <g class="service"><rect x="40" y="330" width="104" height="34" rx="6"/><text x="92" y="352">Pi-hole</text></g>
-                <g class="service"><rect x="153" y="330" width="104" height="34" rx="6"/><text x="205" y="352">Jellyfin</text></g>
-                <g class="service"><rect x="263" y="330" width="104" height="34" rx="6"/><text x="315" y="352">Immich</text></g>
-                <g class="service"><rect x="376" y="330" width="104" height="34" rx="6"/><text x="428" y="352">Home Assistant</text></g>
-                <text class="legende centre" x="260" y="398">Docker et Dockge, supervision Prometheus et Grafana, alertes Ntfy</text>
-            </svg>
-            <figcaption>Mon serveur à la maison. Le détail est dans <a href="Projets/projet6/index.html">le projet</a>.</figcaption>
-        </figure>
     </header>
 
     <main>
-        <section id="about">
-            <h2>À propos</h2>
-            <div class="about-contenu">
-                <img src="portrait.jpg" alt="Portrait de Paulin Roussel" class="portrait-image">
-                <div class="text-contenu">
-                    <p>Je suis en troisième année de BUT Réseaux et Télécommunications, parcours cybersécurité, à l'IUT de Clermont-Ferrand. Je cherche une alternance en systèmes, réseaux et cybersécurité, que je veux poursuivre à partir de septembre 2027 en cycle ingénieur Informatique et Réseaux par apprentissage à IMT Mines Alès.</p>
-                    <p>À terme, je veux faire de la cybersécurité, et en particulier du pentest. Je pense qu'on ne peut pas bien sécuriser, ni même attaquer, une infrastructure sans savoir d'abord comment elle est construite et administrée. C'est pour ça que je commence par l'administration des systèmes et des réseaux.</p>
-                    <p>Tout a commencé avec mon stage de 3ᵉ à la Direction Opérationnelle des Systèmes d'Information des Cézeaux, où j'ai découvert les réseaux et l'administration de serveurs de calcul.</p>
-                </div>
-            </div>
-        </section>
 
         <section id="parcours">
             <h2>Parcours</h2>
@@ -104,21 +79,21 @@
                     <span class="quand">2024</span>
                     <div>
                         <h3>Bac général, mention bien</h3>
-                        <p>Lycée Lafayette, Clermont-Ferrand. Spécialités mathématiques et NSI.</p>
+                        <p>Obtention du baccalauréat général mention bien avec les spécialités mathématiques et numérique et sciences informatiques au lycée Lafayette.</p>
                     </div>
                 </li>
                 <li>
                     <span class="quand">2024 – 2027</span>
                     <div>
                         <h3>BUT Réseaux et Télécommunications, parcours cybersécurité</h3>
-                        <p>IUT Clermont Auvergne, Aubière. Administration des réseaux et des systèmes, réseaux sécurisés multi-sites, annuaires, téléphonie IP, fibre optique, pentest.</p>
+                        <p>Bachelor Universitaire de Technologie en Réseaux et Télécommunications, parcours cybersécurité, à l'IUT Clermont Auvergne (Aubière) : administration des réseaux et des systèmes, réseaux sécurisés multi-sites, services d'annuaires, téléphonie IP, fibre optique, pentest.</p>
                     </div>
                 </li>
                 <li class="avenir">
                     <span class="quand">2027 – 2030</span>
                     <div>
                         <h3>Ingénieur Informatique et Réseaux par apprentissage</h3>
-                        <p>IMT Mines Alès. Admissible en 2026, je n'ai pas pu entrer faute d'entreprise. Je recandidate pour septembre 2027 : c'est l'alternance que je cherche aujourd'hui.</p>
+                        <p>Déclaré admissible au cycle ingénieur Informatique et Réseaux par apprentissage d'IMT Mines Alès en 2026. Je n'ai pas pu l'intégrer faute d'entreprise d'accueil, et je recandidate pour la rentrée de septembre 2027.</p>
                     </div>
                 </li>
             </ol>
@@ -131,29 +106,29 @@
                     <h3>Stagiaire à la DSI, équipe systèmes, réseaux et sécurité</h3>
                     <p class="xp-meta">OPHIS, office public de l'habitat du Puy-de-Dôme. Avril à juin 2026, 10 semaines.</p>
                 </div>
-                <p>Mon projet : mettre en place une photothèque d'entreprise pour centraliser les photos des bâtiments, du choix de la solution jusqu'à la mise en production.</p>
+                <p>Stage de 10 semaines à la Direction des Systèmes d'Information de l'OPHIS, l'Office Public de l'Habitat du Puy-de-Dôme. Mon projet : mettre en place une <strong>photothèque d'entreprise</strong> pour centraliser les photos des bâtiments.</p>
                 <ul>
-                    <li><strong>Choix de la solution</strong> : besoins recueillis avec le service communication, comparaison de 6 logiciels (Piwigo, Immich, PhotoPrism, Lychee…), choix de Piwigo.</li>
-                    <li><strong>Tests</strong> sous Docker puis sur une VM Debian (Proxmox).</li>
-                    <li><strong>Production</strong> : VM CentOS Stream sous VMware vCenter, LVM, Apache, MariaDB, PHP, HTTPS avec les certificats internes, pare-feu local qui limite l'accès à la base.</li>
-                    <li><strong>Authentification unique</strong> avec l'Active Directory via Kerberos : reverse proxy Apache (GSSAPI) et plugin ExternalAuth.</li>
-                    <li><strong>Droits</strong> : 3 niveaux d'accès et un circuit de validation des photos avant publication.</li>
-                    <li><strong>Automatisation</strong> : arborescence synchronisée avec les données du patrimoine (Pentaho, Neovacom Integration Engine).</li>
-                    <li><strong>Migration</strong> des photos existantes en Python via l'API Piwigo, et intégration dans l'application interne « Viewer Patrimoine ».</li>
-                    <li><strong>Accès distant</strong> : publication sur l'extranet via le pare-feu FortiGate.</li>
-                    <li><strong>Sécurité</strong> : accès direct aux images sans authentification corrigé avec le reverse proxy, faille XSS stockée identifiée (exploitable seulement avec des droits admin). J'ai aussi trouvé et signalé une faille de la recherche du site public, qui permettait de faire indexer du contenu indésirable par Google.</li>
+                    <li><strong>Choix de la solution</strong> : analyse des besoins avec le service Communication et étude comparative de 6 logiciels (Piwigo, Immich, PhotoPrism, Lychee…), choix de Piwigo.</li>
+                    <li><strong>Environnement de test</strong> sous Docker puis sur une VM Debian (Proxmox).</li>
+                    <li><strong>Production</strong> : VM CentOS Stream sous VMware vCenter, stockage LVM, Apache, MariaDB, PHP, HTTPS avec les certificats internes, pare-feu local limitant l'accès à la base de données.</li>
+                    <li><strong>Authentification unique (SSO)</strong> avec l'Active Directory via Kerberos : reverse proxy Apache (GSSAPI) et plugin ExternalAuth.</li>
+                    <li><strong>Droits et validation</strong> : 3 niveaux d'accès et circuit de validation des photos avant publication.</li>
+                    <li><strong>Automatisation</strong> : synchronisation de l'arborescence avec les données du patrimoine (Pentaho, Neovacom Integration Engine).</li>
+                    <li><strong>Migration</strong> des photos existantes par scripts Python via l'API Piwigo, et intégration dans l'application interne « Viewer Patrimoine ».</li>
+                    <li><strong>Accès distant</strong> : publication sur l'extranet de l'entreprise via le pare-feu FortiGate.</li>
+                    <li><strong>Tests de sécurité</strong> : accès direct aux images sans authentification corrigé grâce au reverse proxy, faille XSS stockée identifiée (exploitable uniquement avec des droits administrateur). Découverte et signalement d'une faille de la page de recherche du site public, qui permettait de faire indexer du contenu indésirable par Google.</li>
                 </ul>
             </article>
             <div class="xp-autres">
                 <article>
                     <h3>Technicien monteur</h3>
                     <p class="xp-meta">Verdot Biotechnologies. 2024, 1 mois.</p>
-                    <p>Préparation et assemblage d'équipements pharmaceutiques, dans un environnement industriel où la précision et les normes de sécurité ne laissent pas de place à l'à-peu-près.</p>
+                    <p>J'ai travaillé chez Verdot Ips2 durant 1 mois. Cette expérience m'a permis de développer des compétences techniques dans un environnement industriel très exigeant. J'ai participé à la préparation et à l'assemblage de divers équipements pharmaceutique, en veillant à la précision des installations et à la conformité des normes de sécurité. Cela m'a également appris à m'adapter rapidement aux nouveaux environnements de travail et à gérer des tâches variées, parfois complexes, tout en restant rigoureux.</p>
                 </article>
                 <article>
                     <h3>Castration de maïs</h3>
                     <p class="xp-meta">Deux étés, 1 mois chacun.</p>
-                    <p>Travail en équipe en extérieur, à un rythme soutenu et avec des délais serrés.</p>
+                    <p>Pendant deux années consécutives, j'ai travaillé à la castration de maïs sur une période d'un mois chaque année. Cette expérience m'a permis de développer des compétences manuelles dans un environnement agricole rigoureux. J'ai appris à travailler en équipe, à gérer des tâches répétitives avec rigueur et à respecter des délais serrés. Elle m'a également appris à m'adapter rapidement aux conditions de travail extérieures parfois difficiles tout en restant concentré et efficace.</p>
                 </article>
             </div>
         </section>
@@ -163,7 +138,7 @@
             <div class="liste-projets">
                 <a class="projet" href="Projets/projet6/index.html">
                     <h3>Serveur auto-hébergé</h3>
-                    <p>Un serveur Linux chez moi avec une dizaine de services sous Docker Compose, gérés avec Dockge, supervisés avec Prometheus et Grafana, et accessibles à distance par un VPN Tailscale.</p>
+                    <p>J'administre chez moi un serveur Linux sur lequel tournent une dizaine de services sous Docker Compose, gérés avec Dockge : Pi-hole (DNS filtrant), Immich, Jellyfin, Home Assistant pour la domotique, un broker MQTT, code-server… J'y ai mis en place une supervision avec Prometheus et Grafana, des alertes avec Ntfy, et un accès à distance sécurisé via un VPN Tailscale.</p>
                     <dl>
                         <dt>Cadre</dt><dd>Personnel, en continu</dd>
                         <dt>Outils</dt><dd>Debian, Docker, Pi-hole, Prometheus, Grafana, Ntfy, Tailscale</dd>
@@ -171,7 +146,7 @@
                 </a>
                 <a class="projet" href="Projets/projet5/index.html">
                     <h3>Réseau d'entreprise complet</h3>
-                    <p>Le réseau d'un cabinet dentaire fictif avec 5 machines : Active Directory et GPO, un serveur Linux en DMZ pour le site et la messagerie, la téléphonie IP, et une interconnexion avec les réseaux des autres groupes.</p>
+                    <p>Projet de fin de première année, réalisé en 3 semaines en autonomie : mettre en place le réseau d'un cabinet dentaire fictif avec 5 machines. Un serveur Windows avec Active Directory et des GPO pour déployer les logiciels sur 2 postes clients, un serveur Linux en DMZ pour le site web et la messagerie, et un serveur Linux interne pour la téléphonie IP. Le réseau était interconnecté avec ceux des autres groupes : chacun pouvait appeler les autres cabinets et consulter leur site web.</p>
                     <dl>
                         <dt>Cadre</dt><dd>BUT1, 3 semaines en autonomie</dd>
                         <dt>Outils</dt><dd>Windows Server, AD, GPO, Linux, DMZ, ToIP</dd>
@@ -179,7 +154,7 @@
                 </a>
                 <a class="projet" href="Projets/projet2/index.html">
                     <h3>Téléphonie IP</h3>
-                    <p>Configuration d'un call server, d'abonnés, de téléphones OpenStage et d'un softphone, analyse des échanges SIP dans Wireshark, puis groupes d'appel, renvois, messagerie vocale et trunk SIP vers l'extérieur.</p>
+                    <p>Ce projet de téléphonie IP visait à configurer une infrastructure complète en environnement professionnel. Réalisé sur 3 séances en autonomie, il m’a permis de configurer manuellement un Call Server, de créer des abonnés et de paramétrer des téléphones OpenStage ainsi qu’un softphone via le logiciel Xlite. J’ai également utilisé Wireshark pour analyser les échanges SIP et comprendre le déroulement d’un appel (REGISTER, INVITE, etc.). Enfin, j’ai expérimenté la configuration de groupes d’appel, de renvois, de la messagerie vocale via MyPortal, et l’activation d’un trunk SIP pour permettre les appels vers l’extérieur.</p>
                     <dl>
                         <dt>Cadre</dt><dd>BUT, 3 séances en autonomie</dd>
                         <dt>Outils</dt><dd>SIP, OpenStage, X-Lite, Wireshark, MyPortal</dd>
@@ -187,22 +162,22 @@
                 </a>
                 <a class="projet" href="Projets/projet4/index.html">
                     <h3>Application coffre-fort</h3>
-                    <p>Une application Android pour ranger et protéger des documents sur le téléphone, avec mot de passe chiffré ou empreinte digitale, et stockage local dans une base SQLite.</p>
+                    <p>Dans ce projet, j’ai développé une application Android permettant de sécuriser et d’organiser des documents directement sur le téléphone. L’application offre des fonctionnalités complètes pour ajouter, consulter, classer et supprimer des documents ou des notes, le tout protégé par un mot de passe chiffré ou l’empreinte digitale. Elle s’appuie sur une base de données SQLite pour stocker toutes les informations en local, garantissant la confidentialité des fichiers. L’interface, conçue avec Android Studio en Java, permet une utilisation simple, intuitive et adaptée aux besoins d’un coffre-fort numérique mobile.</p>
                     <dl>
                         <dt>Cadre</dt><dd>SAE32</dd>
                         <dt>Outils</dt><dd>Java, Android Studio, SQLite</dd>
                     </dl>
                 </a>
                 <a class="projet" href="Projets/projet3/index.html">
-                    <h3>Gestion de bibliothèque</h3>
-                    <p>Un logiciel pour gérer les prêts et retours de livres, et ajouter, modifier ou supprimer des livres.</p>
+                    <h3>Logiciel de gestion de bibliothèque</h3>
+                    <p>Dans ce projet, j'ai développé un logiciel de gestion de bibliothèque permettant de gérer les prêts et les retours de livres. L'application offre également des fonctionnalités complètes pour ajouter, éditer et supprimer des livres dans la base de données. Le projet a été réalisé en Python, avec l'utilisation de Tkinter pour l'interface graphique et SQLite pour la gestion de la base de données.</p>
                     <dl>
                         <dt>Outils</dt><dd>Python, Tkinter, SQLite</dd>
                     </dl>
                 </a>
                 <a class="projet" href="Projets/projet1/index.html">
-                    <h3>Robot Maqueen</h3>
-                    <p>Programmer un robot pour suivre une ligne, déposer une balle dans un trou et finir le circuit. Résultat : meilleur chrono de la classe.</p>
+                    <h3>Programmation du robot Maqueen</h3>
+                    <p>Ce projet de programmation avait pour but de faire évoluer un robot Maqueen afin qu'il réalise un parcours autonome. Le robot devait d'abord suivre une ligne, puis en sortir, se rendre jusqu'à un trou pour y poser une balle, revenir sur la ligne et enfin compléter le circuit. J'ai pris en charge l'intégralité de la programmation Python, en intégrant les algorithmes nécessaires pour gérer les capteurs du robot, coordonner ses mouvements et assurer la fluidité des différentes étapes du parcours.</p>
                     <dl>
                         <dt>Outils</dt><dd>Python, capteurs</dd>
                     </dl>
@@ -270,7 +245,7 @@
                     </svg>
                     <div>
                         <h3>Bowling</h3>
-                        <p>Je joue au club du B.Bowl à La Pardieu. J'aime le côté stratégique et compétitif, et je passe beaucoup de temps à étudier le jeu et à demander conseil aux joueurs plus expérimentés. Je prévois de rejoindre des ligues l'an prochain.</p>
+                        <p>Le bowling est un sport que je pratique au club de la B.Bowl situé à La Pardieu et que je trouve particulièrement captivant. J'apprécie non seulement son aspect stratégique et compétitif, mais je m'y intéresse également de manière approfondie. Je passe énormément de temps à étudier toutes les caractéristiques du jeu et à discuter avec d'autres passionnés, en leur demandant régulièrement des conseils pour améliorer mon jeu. À partir de l’année prochaine, je prévois de rejoindre des ligues pour continuer à progresser et à relever de nouveaux défis dans ce sport.</p>
                     </div>
                 </article>
                 <article>
@@ -279,8 +254,8 @@
                         <circle cx="30" cy="36" r="6"/>
                     </svg>
                     <div>
-                        <h3>Domotique</h3>
-                        <p>Lumières, portail, fenêtres, radiateurs : tout passe par Home Assistant, avec mes propres automatisations. J'ai aussi modifié des pilotes d'appareils qui n'étaient pas compatibles pour les intégrer.</p>
+                        <h3>Objets connectés et domotique</h3>
+                        <p>Je m'intéresse particulièrement aux objets connectés et à la domotique, et utilise des applications comme Home Assistant et SmartThings pour gérer des éléments comme les lumières, portes, portails, fenêtres et radiateurs par exemple. J'ai développé mes propres automatisations, ce qui me permet de rendre mon environnement plus confortable et fonctionnel. J'ai également modifié certains pilotes d'appareils initialement non-compatibles pour les intégrer à mon système domotique, maximisant ainsi leur potentiel et leur efficacité dans mon réseau.</p>
                     </div>
                 </article>
             </div>
