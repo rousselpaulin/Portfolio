@@ -7,285 +7,294 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'G-NTZ0M9LV52');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Paulin Roussel, étudiant en BUT3 Réseaux et Télécommunications (cybersécurité), cherche une alternance en systèmes, réseaux et cybersécurité.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Paulin Roussel – Portfolio systèmes, réseaux et cybersécurité</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Paulin Roussel – Alternance systèmes, réseaux et cybersécurité</title>
 </head>
 <body>
-    <!-- Barre de navigation -->
     <nav class="navbar">
-        <div class="nom"><a>ROUSSEL Paulin</a></div>
+        <a class="nom" href="#home">Paulin Roussel</a>
         <div class="menu">
-            <a href="#home">Accueil</a>
-            <a href="#formation">Formation</a>
+            <a href="#about">À propos</a>
+            <a href="#parcours">Parcours</a>
             <a href="#experience">Expériences</a>
             <a href="#projets">Projets</a>
             <a href="#competences">Compétences</a>
-            <a href="#loisirs">Loisirs</a>
-            <a href="CV-ROUSSEL-Paulin.pdf">CV</a>
             <a href="#contact">Contact</a>
+            <a class="menu-cv" href="CV-ROUSSEL-Paulin.pdf">CV</a>
         </div>
-        <div class="burger" id="burger">
+        <button class="burger" id="burger" aria-label="Ouvrir le menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
+        </button>
     </nav>
 
-    <!-- Section d'introduction -->
-    <section id="home">
-        <div class="hero">
-            <p class="hero-tag"><span>&gt;</span> BUT3 Réseaux &amp; Télécoms · parcours Cybersécurité · Clermont-Ferrand</p>
-            <h1>Paulin<br><em>Roussel</em></h1>
-            <p class="hero-sous">Administration systèmes et réseaux aujourd'hui, cybersécurité et pentest demain. Je cherche une alternance que je veux poursuivre en cycle ingénieur à IMT Mines Alès.</p>
-            <div class="statut">Recherche une alternance · disponible maintenant · mobile partout en France</div>
+    <header id="home">
+        <div class="hero-texte">
+            <h1>Paulin Roussel</h1>
+            <p class="hero-sous">Étudiant en BUT3 Réseaux et Télécoms, parcours cybersécurité, à Clermont-Ferrand. Je cherche une <strong>alternance en systèmes, réseaux et cybersécurité</strong>, à poursuivre en cycle ingénieur à IMT Mines Alès.</p>
+            <p class="dispo"><span class="voyant" aria-hidden="true"></span>Disponible dès maintenant, partout en France</p>
             <div class="hero-actions">
                 <a class="btn" href="CV-ROUSSEL-Paulin.pdf">Télécharger mon CV</a>
-                <a class="btn btn-ligne" href="#contact">Me contacter</a>
+                <a class="btn btn-ligne" href="mailto:paulin.roussel63@gmail.com">M'écrire</a>
             </div>
         </div>
-    </section>
 
-    <!-- Section À propos -->
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <div class="about-contenu">
-            <img src="portrait.jpg" alt="ma-photo" class="portrait-image">
-            <div class="text-contenu">
-                <p>
-                    Je m'appelle <strong>Paulin Roussel</strong>, étudiant en <strong>troisième année de BUT Réseaux et Télécommunications, parcours cybersécurité</strong>, à l'IUT de Clermont-Ferrand (site d'Aubière).
-                    Je recherche une <strong>alternance</strong> en <strong>systèmes, réseaux et cybersécurité</strong>, que je souhaite poursuivre à partir de septembre 2027 en <strong>cycle ingénieur Informatique et Réseaux par apprentissage à IMT Mines Alès</strong>.
-                </p>
-                <br>
-                <p>
-                    À terme, je veux m'orienter vers la <strong>cybersécurité</strong>, notamment le <strong>pentest</strong>.
-                    Je suis convaincu qu'on ne peut pas bien sécuriser, ni même attaquer, une infrastructure sans d'abord savoir comment elle est <strong>construite et administrée</strong> :
-                    c'est pourquoi je me forme d'abord à l'<strong>administration des systèmes et des réseaux</strong>.
-                </p>
-                <br>
-                <p>
-                    Lors de mon <strong>stage à la DSI de l'OPHIS</strong> (avril – juin 2026), j'ai mis en place la <strong>photothèque de l'entreprise</strong>, du choix de la solution jusqu'à la mise en production,
-                    avec une <strong>authentification unique liée à l'Active Directory</strong>, des <strong>automatisations</strong> et des <strong>tests de sécurité</strong>.
-                    Chez moi, j'administre un <strong>serveur Linux auto-hébergé</strong> avec une dizaine de services sous <strong>Docker</strong>, supervisé avec <strong>Prometheus et Grafana</strong>.
-                </p>
-                <br>
-                <p>
-                    Mon intérêt pour l'informatique est né lors de mon <strong>stage de 3ᵉ</strong> à la Direction Opérationnelle des Systèmes d'Information des Cézeaux,
-                    où j'ai découvert les <strong>réseaux</strong> et l'<strong>administration de serveurs de calcul</strong>.
-                </p>
-            </div>
-        </div>
-        <a href="CV-ROUSSEL-Paulin.pdf">
-            <button>Télécharger mon CV</button>
-        </a>
-    </section>    
+        <figure class="schema">
+            <svg viewBox="0 0 520 440" role="img" aria-labelledby="schema-titre">
+                <title id="schema-titre">Schéma de mon serveur auto-hébergé : accès depuis Internet via Tailscale, box, serveur Debian, services Docker</title>
+                <g class="fils">
+                    <path d="M260 52 V112"/>
+                    <path d="M260 148 V202"/>
+                    <path d="M260 242 C260 290 92 280 92 330"/>
+                    <path d="M260 242 C260 290 205 285 205 330"/>
+                    <path d="M260 242 C260 290 315 285 315 330"/>
+                    <path d="M260 242 C260 290 428 280 428 330"/>
+                    <path class="tirets" d="M200 34 C 96 34 96 222 180 222"/>
+                </g>
+                <g class="noeud">
+                    <rect x="200" y="16" width="120" height="36" rx="18"/>
+                    <text x="260" y="39">Internet</text>
+                </g>
+                <g class="noeud">
+                    <rect x="200" y="112" width="120" height="36" rx="6"/>
+                    <text x="260" y="135">Box</text>
+                </g>
+                <g class="noeud fort">
+                    <rect x="180" y="202" width="160" height="40" rx="6"/>
+                    <text x="260" y="227">Serveur Debian</text>
+                </g>
+                <text class="legende" x="14" y="130">VPN Tailscale</text>
+                <g class="service"><rect x="40" y="330" width="104" height="34" rx="6"/><text x="92" y="352">Pi-hole</text></g>
+                <g class="service"><rect x="153" y="330" width="104" height="34" rx="6"/><text x="205" y="352">Jellyfin</text></g>
+                <g class="service"><rect x="263" y="330" width="104" height="34" rx="6"/><text x="315" y="352">Immich</text></g>
+                <g class="service"><rect x="376" y="330" width="104" height="34" rx="6"/><text x="428" y="352">Home Assistant</text></g>
+                <text class="legende centre" x="260" y="398">Docker et Dockge, supervision Prometheus et Grafana, alertes Ntfy</text>
+            </svg>
+            <figcaption>Mon serveur à la maison. Le détail est dans <a href="Projets/projet6/index.html">le projet</a>.</figcaption>
+        </figure>
+    </header>
 
-    <!-- Section Formation -->
-    <section id="formation">
-        <h2>Formation</h2>
-        <div class="projets">
-            <div class="card">
-                <h3>BUT Réseaux et Télécommunications – parcours Cybersécurité</h3>
-                <img src="IUT.png" alt="IUT Clermont Auvergne" id="card-image">
-                <h2>2024 – 2027</h2>
-                <p>Bachelor Universitaire de Technologie en Réseaux et Télécommunications, parcours cybersécurité, à l'IUT Clermont Auvergne (Aubière) : administration des réseaux et des systèmes, réseaux sécurisés multi-sites, services d'annuaires, téléphonie IP, fibre optique, pentest.</p>
+    <main>
+        <section id="about">
+            <h2>À propos</h2>
+            <div class="about-contenu">
+                <img src="portrait.jpg" alt="Portrait de Paulin Roussel" class="portrait-image">
+                <div class="text-contenu">
+                    <p>Je suis en troisième année de BUT Réseaux et Télécommunications, parcours cybersécurité, à l'IUT de Clermont-Ferrand. Je cherche une alternance en systèmes, réseaux et cybersécurité, que je veux poursuivre à partir de septembre 2027 en cycle ingénieur Informatique et Réseaux par apprentissage à IMT Mines Alès.</p>
+                    <p>À terme, je veux faire de la cybersécurité, et en particulier du pentest. Je pense qu'on ne peut pas bien sécuriser, ni même attaquer, une infrastructure sans savoir d'abord comment elle est construite et administrée. C'est pour ça que je commence par l'administration des systèmes et des réseaux.</p>
+                    <p>Tout a commencé avec mon stage de 3ᵉ à la Direction Opérationnelle des Systèmes d'Information des Cézeaux, où j'ai découvert les réseaux et l'administration de serveurs de calcul.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>IMT Mines Alès – Ingénieur Informatique et Réseaux</h3>
-                <h2>Admissible en 2026</h2>
-                <p>Déclaré admissible au cycle ingénieur Informatique et Réseaux par apprentissage d'IMT Mines Alès en 2026. Je n'ai pas pu l'intégrer faute d'entreprise d'accueil, et je recandidate pour la rentrée de septembre 2027.</p>
-            </div>
-            <div class="card">
-                <h3>Lycée Lafayette</h3>
-                <img src="lafayette.jpg" alt="Lafayette" id="card-image">
-                <h2>2024</h2>
-                <p>Obtention du baccalauréat général mention bien avec les spécialités mathématiques et numérique et sciences informatiques au lycée Lafayette.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Experience -->
-    <section id="experience">
-        <h2>Expériences professionnelles</h2>
-        <div class="projets">
-            <div class="card">
-                <h3>Stagiaire DSI, équipe Systèmes, Réseaux et Sécurité – OPHIS</h3>
-                <h2>Avril – juin 2026</h2>
-                <p>Stage de 10 semaines à la Direction des Systèmes d'Information de l'OPHIS, l'Office Public de l'Habitat du Puy-de-Dôme. Mon projet : mettre en place une <strong>photothèque d'entreprise</strong> pour centraliser les photos des bâtiments.</p>
-                <ul style="text-align:left">
-                    <li><strong>Choix de la solution</strong> : analyse des besoins avec le service Communication et étude comparative de 6 logiciels (Piwigo, Immich, PhotoPrism, Lychee…), choix de Piwigo.</li>
-                    <li><strong>Environnement de test</strong> sous Docker puis sur une VM Debian (Proxmox).</li>
-                    <li><strong>Production</strong> : VM CentOS Stream sous VMware vCenter, stockage LVM, Apache, MariaDB, PHP, HTTPS avec les certificats internes, pare-feu local limitant l'accès à la base de données.</li>
-                    <li><strong>Authentification unique (SSO)</strong> avec l'Active Directory via Kerberos : reverse proxy Apache (GSSAPI) et plugin ExternalAuth.</li>
-                    <li><strong>Droits et validation</strong> : 3 niveaux d'accès et circuit de validation des photos avant publication.</li>
-                    <li><strong>Automatisation</strong> : synchronisation de l'arborescence avec les données du patrimoine (Pentaho, Neovacom Integration Engine).</li>
-                    <li><strong>Migration</strong> des photos existantes par scripts Python via l'API Piwigo, et intégration dans l'application interne « Viewer Patrimoine ».</li>
-                    <li><strong>Accès distant</strong> : publication sur l'extranet de l'entreprise via le pare-feu FortiGate.</li>
-                    <li><strong>Tests de sécurité</strong> : accès direct aux images sans authentification corrigé grâce au reverse proxy, faille XSS stockée identifiée (exploitable uniquement avec des droits administrateur). Découverte et signalement d'une faille de la page de recherche du site public, qui permettait de faire indexer du contenu indésirable par Google.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Technicien/Monteur – Verdot Biotechnologies</h3>
-                <img src="verdot-logo.jpg" alt="Verdot Ips2" id="card-image">
-                <h2>2024</h2>
-                <p>J'ai travaillé chez Verdot Ips2 durant 1 mois. Cette expérience m'a permis de développer des compétences techniques dans un environnement industriel très exigeant. J'ai participé à la préparation et à l'assemblage de divers équipements pharmaceutique, en veillant à la précision des installations et à la conformité des normes de sécurité. Cela m'a également appris à m'adapter rapidement aux nouveaux environnements de travail et à gérer des tâches variées, parfois complexes, tout en restant rigoureux.</p>
-            </div>
-            <div class="card">
-                <h3>Castration de Maïs</h3>
-                <img src="maïs.webp" alt="Travail sur les Maïs" id="card-image">
-                <h2>Deux étés</h2>
-                <p>Pendant deux années consécutives, j'ai travaillé à la castration de maïs sur une période d'un mois chaque année. Cette expérience m'a permis de développer des compétences manuelles dans un environnement agricole rigoureux. J'ai appris à travailler en équipe, à gérer des tâches répétitives avec rigueur et à respecter des délais serrés. Elle m'a également appris à m'adapter rapidement aux conditions de travail extérieures parfois difficiles tout en restant concentré et efficace.</p>
-            </div>
-        </div>
-    </section>
+        <section id="parcours">
+            <h2>Parcours</h2>
+            <ol class="frise">
+                <li>
+                    <span class="quand">2024</span>
+                    <div>
+                        <h3>Bac général, mention bien</h3>
+                        <p>Lycée Lafayette, Clermont-Ferrand. Spécialités mathématiques et NSI.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="quand">2024 – 2027</span>
+                    <div>
+                        <h3>BUT Réseaux et Télécommunications, parcours cybersécurité</h3>
+                        <p>IUT Clermont Auvergne, Aubière. Administration des réseaux et des systèmes, réseaux sécurisés multi-sites, annuaires, téléphonie IP, fibre optique, pentest.</p>
+                    </div>
+                </li>
+                <li class="avenir">
+                    <span class="quand">2027 – 2030</span>
+                    <div>
+                        <h3>Ingénieur Informatique et Réseaux par apprentissage</h3>
+                        <p>IMT Mines Alès. Admissible en 2026, je n'ai pas pu entrer faute d'entreprise. Je recandidate pour septembre 2027 : c'est l'alternance que je cherche aujourd'hui.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
 
-    <!-- Section Projets -->
-    <section id="projets">
-        <h2>Mes Projets</h2>
-        <div class="projets">
-            <div class="card">
-                <h3>Réseau d'entreprise complet</h3>
-                <img src="packet-tracer.webp" alt="réseau">
-                <p>Projet de fin de première année, réalisé en 3 semaines en autonomie : mettre en place le réseau d'un cabinet dentaire fictif avec 5 machines. Un serveur Windows avec Active Directory et des GPO pour déployer les logiciels sur 2 postes clients, un serveur Linux en DMZ pour le site web et la messagerie, et un serveur Linux interne pour la téléphonie IP. Le réseau était interconnecté avec ceux des autres groupes : chacun pouvait appeler les autres cabinets et consulter leur site web.</p>
-                <a href="/Portfolio/Projets/projet5/index.html">
-                    <button>Voir le projet</button>
-                </a>
-            </div>
-            <div class="card">
-                <h3>Serveur auto-hébergé</h3>
-                <img src="linux.png" alt="linux">
-                <p>J'administre chez moi un serveur Linux sur lequel tournent une dizaine de services sous Docker Compose, gérés avec Dockge : Pi-hole (DNS filtrant), Immich, Jellyfin, Home Assistant pour la domotique, un broker MQTT, code-server… J'y ai mis en place une supervision avec Prometheus et Grafana, des alertes avec Ntfy, et un accès à distance sécurisé via un VPN Tailscale.</p>
-                <a href="/Portfolio/Projets/projet6/index.html">
-                    <button>Voir le projet</button>
-                </a>
-            </div>
-            <div class="card">
-                <h3>Application Coffre Fort</h3>
-                <img src="Android_Studio_Logo.png" alt="python-logo">
-                <p>Dans ce projet, j’ai développé une application Android permettant de sécuriser et d’organiser des documents directement sur le téléphone. L’application offre des fonctionnalités complètes pour ajouter, consulter, classer et supprimer des documents ou des notes, le tout protégé par un mot de passe chiffré ou l’empreinte digitale. Elle s’appuie sur une base de données SQLite pour stocker toutes les informations en local, garantissant la confidentialité des fichiers. L’interface, conçue avec Android Studio en Java, permet une utilisation simple, intuitive et adaptée aux besoins d’un coffre-fort numérique mobile.</p>
-                <a href="/Portfolio/Projets/projet4/index.html">
-                    <button>Voir le projet</button>
-                </a>
-            </div>
-            <div class="card">
-                <h3>Téléphonie IP</h3>
-                <img src="telephone-icon-clipart-lg.png" alt="telephone-icon">
-                <p>Ce projet de téléphonie IP visait à configurer une infrastructure complète en environnement professionnel. Réalisé sur 3 séances en autonomie, il m’a permis de configurer manuellement un Call Server, de créer des abonnés et de paramétrer des téléphones OpenStage ainsi qu’un softphone via le logiciel Xlite. J’ai également utilisé Wireshark pour analyser les échanges SIP et comprendre le déroulement d’un appel (REGISTER, INVITE, etc.). Enfin, j’ai expérimenté la configuration de groupes d’appel, de renvois, de la messagerie vocale via MyPortal, et l’activation d’un trunk SIP pour permettre les appels vers l’extérieur.</p>
-                <a href="/Portfolio/Projets/projet2/index.html">
-                    <button>Voir le projet</button>
-                </a>
-            </div>
-            <div class="card">
-                <h3>Logiciel de Gestion de Bibliothèque</h3>
-                <img src="python.png" alt="python-logo">
-                <p>Dans ce projet, j'ai développé un logiciel de gestion de bibliothèque permettant de gérer les prêts et les retours de livres. L'application offre également des fonctionnalités complètes pour ajouter, éditer et supprimer des livres dans la base de données. Le projet a été réalisé en Python, avec l'utilisation de Tkinter pour l'interface graphique et SQLite pour la gestion de la base de données.</p>
-                <a href="/Portfolio/Projets/projet3/index.html">
-                    <button>Voir le projet</button>
-                </a>
-            </div>
-            <div class="card">
-                <h3>Programmation du Robot Maqueen</h3>
-                <img src="python.png" alt="python-logo">
-                <p>Ce projet de programmation avait pour but de faire évoluer un robot Maqueen afin qu'il réalise un parcours autonome. Le robot devait d'abord suivre une ligne, puis en sortir, se rendre jusqu'à un trou pour y poser une balle, revenir sur la ligne et enfin compléter le circuit.
-                    J'ai pris en charge l'intégralité de la programmation Python, en intégrant les algorithmes nécessaires pour gérer les capteurs du robot, coordonner ses mouvements et assurer la fluidité des différentes étapes du parcours.
-                </p>
-                <a href="/Portfolio/Projets/projet1/index.html">
-                    <button>Voir le projet</button>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Compétences -->
-    <section id="competences">
-        <h2>Compétences</h2>
-        <div class="competences">
-            <div class="card">
-                <h3>Systèmes</h3>
-                <img src="linux.png" alt="logo-linux">
+        <section id="experience">
+            <h2>Expériences</h2>
+            <article class="xp-principale">
+                <div class="xp-tete">
+                    <h3>Stagiaire à la DSI, équipe systèmes, réseaux et sécurité</h3>
+                    <p class="xp-meta">OPHIS, office public de l'habitat du Puy-de-Dôme. Avril à juin 2026, 10 semaines.</p>
+                </div>
+                <p>Mon projet : mettre en place une photothèque d'entreprise pour centraliser les photos des bâtiments, du choix de la solution jusqu'à la mise en production.</p>
                 <ul>
-                    <li>Linux (Debian, CentOS) en ligne de commande</li>
-                    <li>Windows Server, Active Directory, GPO, LDAP</li>
-                    <li>Docker / Docker Compose, Proxmox, VirtualBox</li>
-                    <li>Apache, Nginx, MariaDB</li>
+                    <li><strong>Choix de la solution</strong> : besoins recueillis avec le service communication, comparaison de 6 logiciels (Piwigo, Immich, PhotoPrism, Lychee…), choix de Piwigo.</li>
+                    <li><strong>Tests</strong> sous Docker puis sur une VM Debian (Proxmox).</li>
+                    <li><strong>Production</strong> : VM CentOS Stream sous VMware vCenter, LVM, Apache, MariaDB, PHP, HTTPS avec les certificats internes, pare-feu local qui limite l'accès à la base.</li>
+                    <li><strong>Authentification unique</strong> avec l'Active Directory via Kerberos : reverse proxy Apache (GSSAPI) et plugin ExternalAuth.</li>
+                    <li><strong>Droits</strong> : 3 niveaux d'accès et un circuit de validation des photos avant publication.</li>
+                    <li><strong>Automatisation</strong> : arborescence synchronisée avec les données du patrimoine (Pentaho, Neovacom Integration Engine).</li>
+                    <li><strong>Migration</strong> des photos existantes en Python via l'API Piwigo, et intégration dans l'application interne « Viewer Patrimoine ».</li>
+                    <li><strong>Accès distant</strong> : publication sur l'extranet via le pare-feu FortiGate.</li>
+                    <li><strong>Sécurité</strong> : accès direct aux images sans authentification corrigé avec le reverse proxy, faille XSS stockée identifiée (exploitable seulement avec des droits admin). J'ai aussi trouvé et signalé une faille de la recherche du site public, qui permettait de faire indexer du contenu indésirable par Google.</li>
                 </ul>
+            </article>
+            <div class="xp-autres">
+                <article>
+                    <h3>Technicien monteur</h3>
+                    <p class="xp-meta">Verdot Biotechnologies. 2024, 1 mois.</p>
+                    <p>Préparation et assemblage d'équipements pharmaceutiques, dans un environnement industriel où la précision et les normes de sécurité ne laissent pas de place à l'à-peu-près.</p>
+                </article>
+                <article>
+                    <h3>Castration de maïs</h3>
+                    <p class="xp-meta">Deux étés, 1 mois chacun.</p>
+                    <p>Travail en équipe en extérieur, à un rythme soutenu et avec des délais serrés.</p>
+                </article>
             </div>
-            <div class="card">
-                <h3>Réseaux</h3>
-                <img src="packet-tracer.webp" alt="logo-packet-tracer">
-                <ul>
-                    <li>Cisco IOS : VLAN, trunk, routage statique et OSPF</li>
-                    <li>DHCP, DNS, VPN, Wi-Fi</li>
-                    <li>Réseaux sécurisés multi-sites</li>
-                    <li>Wireshark, Packet Tracer, GNS3</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Sécurité</h3>
-                <img src="kali-dragon-icon.svg" alt="logo-kali">
-                <ul>
-                    <li>Pentest : Kali Linux, Nmap, Burp Suite, Metasploit, Hydra, John the Ripper</li>
-                    <li>Pare-feu Stormshield, notions FortiGate</li>
-                    <li>Supervision (Prometheus, Grafana), SIEM et analyse de logs</li>
-                    <li>Notions de PKI et TLS · Root-Me · BTJA en préparation</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Télécoms et téléphonie</h3>
-                <img src="telephone-icon-clipart-lg.png" alt="telephone-icon">
-                <ul>
-                    <li>ToIP : call server, téléphones IP, softphone, trunk SIP</li>
-                    <li>Fibre optique (FTTH, OLT / ONT), réseaux d'accès et opérateurs</li>
-                    <li>Réseaux mobiles 4G</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Développement</h3>
-                <img src="python.png" alt="logo-python">
-                <ul>
-                    <li>Python (scripts, API)</li>
-                    <li>HTML / CSS, SQL</li>
-                    <li>Notions de JavaScript, Bash, PowerShell</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Loisirs -->
-    <section id="loisirs">
-        <h2>Mes Loisirs</h2>
-        <div class="projets">
-            <div class="card">
-                <h3>Objets Connectés</h3>
-                <img src="smartthings.png" alt="Smartthings" id="card-image-smartthings">
-                <img src="home-assistant.png" alt="Home Assistant" id="card-image-homeassistant">
-                <p>Je m'intéresse particulièrement aux objets connectés et à la domotique, et utilise des applications comme Home Assistant et SmartThings pour gérer des éléments comme les lumières, portes, portails, fenêtres et radiateurs par exemple. J'ai développé mes propres automatisations, ce qui me permet de rendre mon environnement plus confortable et fonctionnel. J'ai également modifié certains pilotes d'appareils initialement non-compatibles pour les intégrer à mon système domotique, maximisant ainsi leur potentiel et leur efficacité dans mon réseau.</p>
+        <section id="projets">
+            <h2>Projets</h2>
+            <div class="liste-projets">
+                <a class="projet" href="Projets/projet6/index.html">
+                    <h3>Serveur auto-hébergé</h3>
+                    <p>Un serveur Linux chez moi avec une dizaine de services sous Docker Compose, gérés avec Dockge, supervisés avec Prometheus et Grafana, et accessibles à distance par un VPN Tailscale.</p>
+                    <dl>
+                        <dt>Cadre</dt><dd>Personnel, en continu</dd>
+                        <dt>Outils</dt><dd>Debian, Docker, Pi-hole, Prometheus, Grafana, Ntfy, Tailscale</dd>
+                    </dl>
+                </a>
+                <a class="projet" href="Projets/projet5/index.html">
+                    <h3>Réseau d'entreprise complet</h3>
+                    <p>Le réseau d'un cabinet dentaire fictif avec 5 machines : Active Directory et GPO, un serveur Linux en DMZ pour le site et la messagerie, la téléphonie IP, et une interconnexion avec les réseaux des autres groupes.</p>
+                    <dl>
+                        <dt>Cadre</dt><dd>BUT1, 3 semaines en autonomie</dd>
+                        <dt>Outils</dt><dd>Windows Server, AD, GPO, Linux, DMZ, ToIP</dd>
+                    </dl>
+                </a>
+                <a class="projet" href="Projets/projet2/index.html">
+                    <h3>Téléphonie IP</h3>
+                    <p>Configuration d'un call server, d'abonnés, de téléphones OpenStage et d'un softphone, analyse des échanges SIP dans Wireshark, puis groupes d'appel, renvois, messagerie vocale et trunk SIP vers l'extérieur.</p>
+                    <dl>
+                        <dt>Cadre</dt><dd>BUT, 3 séances en autonomie</dd>
+                        <dt>Outils</dt><dd>SIP, OpenStage, X-Lite, Wireshark, MyPortal</dd>
+                    </dl>
+                </a>
+                <a class="projet" href="Projets/projet4/index.html">
+                    <h3>Application coffre-fort</h3>
+                    <p>Une application Android pour ranger et protéger des documents sur le téléphone, avec mot de passe chiffré ou empreinte digitale, et stockage local dans une base SQLite.</p>
+                    <dl>
+                        <dt>Cadre</dt><dd>SAE32</dd>
+                        <dt>Outils</dt><dd>Java, Android Studio, SQLite</dd>
+                    </dl>
+                </a>
+                <a class="projet" href="Projets/projet3/index.html">
+                    <h3>Gestion de bibliothèque</h3>
+                    <p>Un logiciel pour gérer les prêts et retours de livres, et ajouter, modifier ou supprimer des livres.</p>
+                    <dl>
+                        <dt>Outils</dt><dd>Python, Tkinter, SQLite</dd>
+                    </dl>
+                </a>
+                <a class="projet" href="Projets/projet1/index.html">
+                    <h3>Robot Maqueen</h3>
+                    <p>Programmer un robot pour suivre une ligne, déposer une balle dans un trou et finir le circuit. Résultat : meilleur chrono de la classe.</p>
+                    <dl>
+                        <dt>Outils</dt><dd>Python, capteurs</dd>
+                    </dl>
+                </a>
             </div>
-            <div class="card">
-                <h3>Bowling</h3>
-                <img src="bbowl.png" alt="Quille" id="card-image-bbowl">
-                <p>Le bowling est un sport que je pratique au club de la B.Bowl situé à La Pardieu et que je trouve particulièrement captivant. J'apprécie non seulement son aspect stratégique et compétitif, mais je m'y intéresse également de manière approfondie. Je passe énormément de temps à étudier toutes les caractéristiques du jeu et à discuter avec d'autres passionnés, en leur demandant régulièrement des conseils pour améliorer mon jeu. À partir de l’année prochaine, je prévois de rejoindre des ligues pour continuer à progresser et à relever de nouveaux défis dans ce sport.</p>
+        </section>
+
+        <section id="competences">
+            <h2>Compétences</h2>
+            <div class="competences">
+                <div>
+                    <h3>Systèmes</h3>
+                    <ul>
+                        <li>Linux (Debian, CentOS) en ligne de commande</li>
+                        <li>Windows Server, Active Directory, GPO, LDAP</li>
+                        <li>Docker, Docker Compose, Proxmox, VirtualBox</li>
+                        <li>Apache, Nginx, MariaDB</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Réseaux</h3>
+                    <ul>
+                        <li>Cisco IOS : VLAN, trunk, routage statique et OSPF</li>
+                        <li>DHCP, DNS, VPN, Wi-Fi</li>
+                        <li>Réseaux sécurisés multi-sites</li>
+                        <li>Wireshark, Packet Tracer, GNS3</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sécurité</h3>
+                    <ul>
+                        <li>Kali, Nmap, Burp Suite, Metasploit, Hydra, John the Ripper</li>
+                        <li>Pare-feu Stormshield, notions de FortiGate</li>
+                        <li>Supervision, SIEM et analyse de logs</li>
+                        <li>Root-Me, certification BTJA en préparation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Télécoms</h3>
+                    <ul>
+                        <li>ToIP : call server, téléphones IP, trunk SIP</li>
+                        <li>Fibre optique (FTTH, OLT / ONT)</li>
+                        <li>Réseaux d'accès, opérateurs, 4G</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Développement</h3>
+                    <ul>
+                        <li>Python (scripts, API)</li>
+                        <li>HTML, CSS, SQL</li>
+                        <li>Notions de JavaScript, Bash, PowerShell</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:paulin.roussel63@gmail.com" style="color:#D32F2F">paulin.roussel63@gmail.com</a></p>
-    </section>
+        <section id="loisirs">
+            <h2>En dehors des cours</h2>
+            <div class="loisirs">
+                <article>
+                    <svg class="quille" viewBox="0 0 40 110" aria-hidden="true">
+                        <path d="M20 2c7 0 9 9 7.5 18-1 6-4.5 9-4.5 15 0 8 13 20 13 42 0 17-6 31-16 31S4 94 4 77c0-22 13-34 13-42 0-6-3.5-9-4.5-15C11 11 13 2 20 2z"/>
+                        <rect x="12" y="25" width="16" height="3.5" rx="1"/>
+                        <rect x="11" y="31" width="18" height="3.5" rx="1"/>
+                    </svg>
+                    <div>
+                        <h3>Bowling</h3>
+                        <p>Je joue au club du B.Bowl à La Pardieu. J'aime le côté stratégique et compétitif, et je passe beaucoup de temps à étudier le jeu et à demander conseil aux joueurs plus expérimentés. Je prévois de rejoindre des ligues l'an prochain.</p>
+                    </div>
+                </article>
+                <article>
+                    <svg class="maison" viewBox="0 0 60 60" aria-hidden="true">
+                        <path d="M8 28 30 9l22 19v23H8z"/>
+                        <circle cx="30" cy="36" r="6"/>
+                    </svg>
+                    <div>
+                        <h3>Domotique</h3>
+                        <p>Lumières, portail, fenêtres, radiateurs : tout passe par Home Assistant, avec mes propres automatisations. J'ai aussi modifié des pilotes d'appareils qui n'étaient pas compatibles pour les intégrer.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <footer>Paulin Roussel · 2026</footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="contact-ligne"><a href="mailto:paulin.roussel63@gmail.com">paulin.roussel63@gmail.com</a></p>
+            <p class="contact-tel">07 77 00 03 52</p>
+        </section>
+    </main>
+
+    <footer>Paulin Roussel, 2026</footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
