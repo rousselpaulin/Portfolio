@@ -420,3 +420,12 @@ section#contact a {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Mise à jour 2026 : cartes sur plusieurs lignes, listes lisibles */
+@media (min-width: 769px) {
+    .projets { flex-wrap: wrap; }
+    .projets .card { flex: 1 1 40%; }
+}
+.card ul { text-align: left; }
+.card li { margin-bottom: 6px; }
+.projets .card img, .projets .card #card-image { max-height: 160px; width: auto; max-width: 60%; object-fit: contain; }
