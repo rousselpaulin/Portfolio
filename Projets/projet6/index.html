@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTZ0M9LV52"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NTZ0M9LV52');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="nom"><a>Mes Projets</a></div>
+        <div class="menu">
+            <a href="../projet5/index.html">Réseau d'entreprise</a>
+            <a href="#home">Serveur</a>
+            <a href="../projet4/index.html">Coffre Fort</a>
+            <a href="../projet2/index.html">Téléphonie</a>
+            <a href="../projet3/index.html">Bibliothèque</a>
+            <a href="../projet1/index.html">Maqueen</a>
+        </div>
+        <div class="burger" id="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Section d'introduction -->
+    <section id="home">
+        <h1>Projet Serveur auto-hébergé</h1>
+    </section>
+
+    <!-- Section Contexte -->
+    <section id="contexte">
+        <h2>Administration d'un serveur Linux personnel avec une dizaine de services</h2>
+        <h3>Contexte</h3>
+        <p>
+            C'est un projet personnel que je fais évoluer en continu. Je voulais héberger moi-même mes services (photos, médias, domotique…) plutôt que de dépendre de services en ligne, et m'en servir comme terrain d'entraînement à l'administration système.
+        </p>
+    </section>
+
+    <!-- Section Objectif -->
+    <section id="objectif">
+        <h3>Objectif</h3>
+        <p>
+            L'objectif est de faire tourner une dizaine de services de façon fiable et sécurisée, de les superviser, et de pouvoir y accéder à distance sans les exposer inutilement sur Internet.
+        </p>
+    </section>
+
+    <!-- Section Travail -->
+    <section id="travail">
+        <h3>Travail Réalisé</h3>
+        <ul>
+        <li>
+            <p>
+            Le serveur tourne sous Linux et je l'administre en ligne de commande. Tous les services sont déployés dans des conteneurs Docker, décrits avec Docker Compose et gérés avec Dockge.
+            </p>
+        </li>
+        <li>
+            <p>
+            J'y héberge notamment Pi-hole (DNS filtrant pour tout mon réseau), Immich (photos), Jellyfin (médias), Home Assistant et un broker MQTT pour la domotique, ainsi que code-server pour coder depuis un navigateur.
+            </p>
+        </li>
+        <li>
+            <p>
+            Pour la domotique, j'ai développé mes propres automatisations et adapté des pilotes d'appareils qui n'étaient pas compatibles à l'origine.
+            </p>
+        </li>
+        <li>
+            <p>
+            J'ai mis en place une supervision avec Prometheus et Grafana pour suivre l'état du serveur et des services, et des alertes envoyées sur mon téléphone avec Ntfy.
+            </p>
+        </li>
+        <li>
+            <p>
+            Pour y accéder à distance, j'utilise un VPN Tailscale : les services restent accessibles depuis l'extérieur sans être exposés directement sur Internet.
+            </p>
+        </li>
+        </ul>
+    </section>
+
+    <!-- Section Resultat -->
+    <section id="resultat">
+        <h3>Résultat</h3>
+        <p>
+            Le serveur fonctionne au quotidien pour toute la maison. Ce projet m'apprend en continu à installer, mettre à jour, superviser et sécuriser des services, et à diagnostiquer les pannes quand quelque chose ne fonctionne plus.
+        </p>
+    </section>
+
+    <!-- Section Retour -->
+    <a href="../../index.html" class="btn-retour">Retour Portfolio</a>
+
+</body>
+
+</html>
