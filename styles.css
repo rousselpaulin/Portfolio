@@ -98,16 +98,16 @@ nav.navbar {
 header#home {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 130px 5vw 70px;
+    padding: 110px 5vw 60px;
     display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
-    gap: 64px;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 56px;
     align-items: start;
 }
 
 header h1 {
     font-weight: 800;
-    font-size: clamp(48px, 6.4vw, 92px);
+    font-size: clamp(44px, 5vw, 76px);
     line-height: .95;
     letter-spacing: -.015em;
 }
@@ -118,13 +118,13 @@ header h1::after {
     display: block;
     width: 120px;
     height: 16px;
-    margin-top: 26px;
+    margin-top: 20px;
     background:
         linear-gradient(var(--rouge), var(--rouge)) top / 100% 5px no-repeat,
         linear-gradient(var(--rouge), var(--rouge)) bottom / 100% 5px no-repeat;
 }
 
-.hero-paragraphes { margin-top: 28px; max-width: 66ch; }
+.hero-paragraphes { margin-top: 30px; max-width: 66ch; font-size: 16.5px; }
 .hero-paragraphes p { margin: 0 0 14px; }
 .hero-paragraphes strong { font-weight: 600; }
 
@@ -132,7 +132,7 @@ header h1::after {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 22px 0 0;
+    margin: 20px 0 0;
     font-size: 15px;
     color: var(--gris);
 }
@@ -143,7 +143,7 @@ header h1::after {
     box-shadow: 0 0 0 4px rgba(47, 158, 87, .16);
 }
 
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
 
 .btn, button {
     display: inline-block;
