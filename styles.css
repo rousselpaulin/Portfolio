@@ -100,7 +100,7 @@ header#home {
     margin: 0 auto;
     min-height: 100vh;
     min-height: 100svh;
-    padding: 84px 5vw 40px;
+    padding: 76px 5vw 28px;
     display: grid;
     grid-template-columns: 240px minmax(0, 1fr);
     gap: 52px;
@@ -110,7 +110,7 @@ header#home {
 
 header h1 {
     font-weight: 800;
-    font-size: clamp(40px, 4.4vw, 64px);
+    font-size: clamp(36px, 4vw, 58px);
     line-height: .95;
     letter-spacing: -.015em;
 }
@@ -121,20 +121,16 @@ header h1::after {
     display: block;
     width: 120px;
     height: 16px;
-    margin-top: 16px;
+    margin-top: 14px;
     background:
         linear-gradient(var(--rouge), var(--rouge)) top / 100% 5px no-repeat,
         linear-gradient(var(--rouge), var(--rouge)) bottom / 100% 5px no-repeat;
 }
 
-.hero-paragraphe {
-    margin: 22px 0 0;
-    max-width: 78ch;
-    font-size: 15.5px;
-    line-height: 1.6;
-}
-.hero-paragraphe strong { font-weight: 600; }
-.hero-bas { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: 24px; }
+.hero-paragraphes { margin-top: 16px; max-width: 82ch; font-size: 15px; line-height: 1.52; }
+.hero-paragraphes p { margin: 0 0 8px; text-align: justify; }
+.hero-paragraphes strong { font-weight: 600; }
+.hero-bas { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 14px; }
 .hero-bas .dispo, .hero-bas .hero-actions { margin: 0; }
 
 .dispo {
